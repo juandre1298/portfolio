@@ -16,10 +16,7 @@ module.exports = {
       },
       display: ["group-hover"],
     },
-    dropShadow: {
-      shinyLight: "0 0 1px rgb(253 186 116)",
-      shinyDark: "0 0 1px rgb(13 148 136)",
-    },
+
     screens: {
       xxs: { raw: "(min-width: 440px)" },
       sm: "640px",

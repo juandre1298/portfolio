@@ -3,7 +3,7 @@ import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 export const Header = ({ setDarkMode, darkMode }) => {
   return (
-    <section className="flex flex-col md:flex-row md:justify-between w-full py-6 px-4 border-b-2 fixed bg-white dark:bg-slate-900 shadow-lg dark:shadow-teal-800 z-10">
+    <section className="flex flex-col top-0 md:flex-row md:justify-between w-full py-6 px-4 border-b-2 fixed bg-white dark:bg-slate-950  shadow-lg dark:shadow-teal-800 z-10">
       <div className=" flex justify-between items-center ">
         <p className="font-burtons mr-4">Developed by Juandre1298</p>
         <button

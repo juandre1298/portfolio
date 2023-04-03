@@ -105,8 +105,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={darkMode ? "dark" : ""}>
-        <div className="min-h-screen text-black dark:text-white dark:bg-slate-900 ">
+        <div className="min-h-screen text-black dark:text-white dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black">
+          <div id="stars" className="z-0"></div>
+          <div id="stars2" className="z-0"></div>
+          {/*          <div id="stars3"></div> */}
           <Header setDarkMode={setDarkMode} darkMode={darkMode} />
+
           <Greeting />
           <ProjectsDisplay projects={projects} />
           <Contact />

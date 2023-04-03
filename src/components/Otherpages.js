@@ -40,14 +40,6 @@ export const Otherpages = () => {
               </div>
             </a>
           </li>
-          <li className=" hover:text-orange-300 dark:hover:text-teal-600 decoration-[1px] cursor-pointer duration-300">
-            <a className="group">
-              <AiFillPhone className="hover:drop-shadow-[0_0_2px_rgba(253,186,116,1)] dark:hover:drop-shadow-[0_0_2px_rgba(13,148,136,1)]   duration-200" />
-              <div className="hidden group-hover:inline absolute bg-gray-600 text-sm ml-4 rounded-sm px-1 w-36 px-auto">
-                (+57) 300 734 02 78
-              </div>
-            </a>
-          </li>
         </ul>
       </div>
     </section>

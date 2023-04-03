@@ -10,7 +10,7 @@ export const ProjectsDisplay = (projects) => {
         {Object.keys(projects.projects).map((key, i) => (
           <section>
             <h1 className="text-3xl capitalize text-center py-4">{key}</h1>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4  md:grid-cols-2 lg:grid-cols-3">
               {projects.projects[key].map((e) => (
                 <div>
                   {console.log(e)}
