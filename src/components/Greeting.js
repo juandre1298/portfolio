@@ -5,12 +5,12 @@ import Image from "next/image";
 import mypicture from "/public/mypicture.png";
 
 export const Greeting = () => {
-  const [greetingDisp, setGreetingDisp] = useState("");
-  const [presentationText, setPresentationText] = useState("");
+  const [greetingDisp, setGreetingDisp] = useState("|");
+  const [presentationText, setPresentationText] = useState("|");
 
   let greetingMessage = "Hi!\nMy name is Juan Andres!";
   let presentationText0 =
-    "I'm a Mechanical Engineer and FrondEnd Web developer with pastion and skills";
+    "I'm a Mechanical Engineer and FrondEnd Web developer with passion and skills v";
 
   useEffect(() => {
     autoTypeWriter(greetingMessage, setGreetingDisp, true, 100);
@@ -18,29 +18,30 @@ export const Greeting = () => {
   }, []);
 
   return (
-    <section className=" gap-16 pt-[200px] font-medium px-4 max-[440px]:pt-[150px] xxs:pt-36 md:px-16 xl:px-14">
-      <div className="flex flex-col gap-10 ">
-        <div className="typewriter md:flex md:justify-between">
-          <div>
-            <h1 className="text-3xl md:text-5xl font-mono whitespace-pre-line">
+    <section className="pt-[78px] md:pt-[90px] font-medium  md:h-screen relative">
+      <div className="flex flex-col gap-10 mx-10 py-8">
+        <div className="typewriter md:flex md:justify-between ">
+          <div className="z-10 flex flex-col gap-4">
+            <h1 className="text-center md:text-left text-3xl md:text-5xl font-mono whitespace-pre-line">
               {greetingDisp}
             </h1>
-            <h2>{presentationText}</h2>
+            <h2 className="text-center md:text-left">{presentationText}</h2>
           </div>
-
+        </div>
+        <div className="flex justify-end z-0 px-[10%] md:px-0 md:end-0 md:absolute md:h-screen">
           <Image
             src={mypicture}
-            className="w-full md:w-1/3 max-h-[800px] z-0 dark:brightness-75 drop-shadow-[0_0_5px_rgba(0,0,0,1)] rounded-xl"
+            /* dark:hue-rotate-[190deg] */
+            className=" bottom-1 opacity-90 object-scale-down drop-shadow-[0_0_5px_rgba(0,0,0,1)] dark:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] rounded-full md:rounded-xl blur-[0.5px] md:w-full md:py-10  dark:brightness-75 dark:grayscale  dark:saturate-50 md:transfor md:translate-x-32 lg:translate-x-0 "
             alt="profile picture"
           />
-          <p>debemos arreglar esas puntas feas de la imagen</p>
         </div>
-
-        <div>
-          <h1>Overview</h1>
+        <div className="z-10">
+          <h1 className="text-center md:text-left text-2xl">Overview</h1>
           <p>
             I'm a fast learning and entusiastic frontend developer with skills
-            in <span>CSS, HTML, REACT JS, TAILWIND, GIT, REDUX, etc</span>
+            in <br />
+            <span>CSS, HTML, REACT JS, TAILWIND, GIT, REDUX, etc</span>
           </p>
           <p>[INCERT FOTO OF TECNOLOGIES]</p>
         </div>
