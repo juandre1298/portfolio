@@ -5,7 +5,7 @@ import { Header } from "../components/Header";
 import { Otherpages } from "../components/Otherpages";
 import { Contact } from "@/components/Contact";
 import { Greeting } from "@/components/Greeting";
-
+import { About } from "@/components/About";
 import { Inter } from "next/font/google";
 
 import { useState, useEffect } from "react";
@@ -113,6 +113,7 @@ export default function Home() {
           {/*          <div id="stars3"></div> */}
           <Header setDarkMode={setDarkMode} darkMode={darkMode} />
           <Greeting />
+          <About />
           <ProjectsDisplay projects={projects} />
           <Experience />
           <Contact />
