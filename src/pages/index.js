@@ -90,6 +90,14 @@ export default function Home() {
         "This is a usefull tool that we all need if we want to be productive, With this page you can organize all your tasks so that you can bring out your most productive side.",
       technologies: ["HTML", "CSS", "JavaScript"],
     },
+    {
+      title: "Pair Game",
+      url: "https://juandre1298.github.io/JSTodoList/",
+      imgLink: todoListApp,
+      description:
+        "This is a usefull tool that we all need if we want to be productive, With this page you can organize all your tasks so that you can bring out your most productive side.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+    },
   ];
 
   const projects = {

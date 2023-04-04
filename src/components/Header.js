@@ -6,7 +6,22 @@ export const Header = ({ setDarkMode, darkMode }) => {
   return (
     <section className="flex flex-col top-0 md:flex-row md:justify-between w-full py-2 md:py-6 px-4 border-b-2 fixed bg-white dark:bg-slate-950  shadow-lg dark:shadow-teal-800 z-40">
       <div className=" flex justify-between items-center">
-        <p className="font-burtons mr-4 md:text-xl">Developed by Juandre1298</p>
+        <button>
+          <Link
+            activeClass="active"
+            to="greeting"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            /* onSetActive={this.handleSetActive} */
+          >
+            <p className="font-burtons mr-4 md:text-xl">
+              Developed by Juandre1298
+            </p>
+          </Link>
+        </button>
+
         <button
           onClick={() => {
             setDarkMode(!darkMode);

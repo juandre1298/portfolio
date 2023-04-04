@@ -42,7 +42,7 @@ export const About = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-90}
                 duration={500}
                 /* onSetActive={this.handleSetActive} */
               >
