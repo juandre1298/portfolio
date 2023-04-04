@@ -2,7 +2,7 @@ import React from "react";
 
 export const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <h1>contact</h1>
       <div>
         <div className="flex flex-col gap-2">

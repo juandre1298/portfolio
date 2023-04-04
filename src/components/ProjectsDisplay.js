@@ -4,7 +4,7 @@ import { laptopfontview1 } from "/public/images.js";
 
 export const ProjectsDisplay = (projects) => {
   return (
-    <section className="py-8 px-4">
+    <section className="py-8 px-4" id="projects">
       <h1 className="text-5xl capitalize text-center">projects</h1>
       <ul>
         {Object.keys(projects.projects).map((key, i) => (

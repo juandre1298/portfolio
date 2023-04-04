@@ -18,7 +18,10 @@ export const Greeting = () => {
   }, []);
 
   return (
-    <section className="pt-[78px] md:pt-[90px] font-medium  md:h-screen relative">
+    <section
+      id="greeting"
+      className="pt-[78px] md:pt-[90px] font-medium  md:h-screen relative"
+    >
       <div className="flex flex-col gap-10 mx-10 py-8">
         <div className="typewriter md:flex md:justify-between ">
           <div className="z-10 flex flex-col gap-4">

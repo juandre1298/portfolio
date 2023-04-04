@@ -23,6 +23,7 @@ import {
   tictactoeGame,
   todoListApp,
 } from "/public/images.js";
+import { Experience } from "@/components/Experience";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -96,6 +97,7 @@ export default function Home() {
     html: htmlProjects,
     reactJs: htmlProjects,
   };
+
   return (
     <>
       <Head>
@@ -110,9 +112,9 @@ export default function Home() {
           <div id="stars2" className="z-0"></div>
           {/*          <div id="stars3"></div> */}
           <Header setDarkMode={setDarkMode} darkMode={darkMode} />
-
           <Greeting />
           <ProjectsDisplay projects={projects} />
+          <Experience />
           <Contact />
           <Otherpages />
         </div>
