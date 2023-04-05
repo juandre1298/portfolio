@@ -1,6 +1,7 @@
 import React from "react";
 import { ProjectCard } from "../components/ProjectCard";
 import { laptopfontview1 } from "/public/images.js";
+import { toast } from "react-toastify";
 
 export const ProjectsDisplay = (projects) => {
   return (

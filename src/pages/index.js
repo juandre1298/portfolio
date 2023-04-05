@@ -7,6 +7,8 @@ import { Contact } from "@/components/Contact";
 import { Greeting } from "@/components/Greeting";
 import { About } from "@/components/About";
 import { Inter } from "next/font/google";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { useState, useEffect } from "react";
 
@@ -106,7 +108,14 @@ export default function Home() {
     html: htmlProjects,
     reactJs: htmlProjects,
   };
+  const [toastTheme, setToastTheme] = useState("dark");
+  useEffect(
+    () => {
+      darkMode ? setToastTheme("dark") : setToastTheme("light");
+    },
 
+    darkMode
+  );
   return (
     <>
       <Head>
@@ -119,15 +128,21 @@ export default function Home() {
         <div className="min-h-screen text-stone-600 dark:text-white dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black">
           <div id="stars" className="z-0"></div>
           <div id="stars2" className="z-0"></div>
-          {/*          <div id="stars3"></div> */}
+
           <Header setDarkMode={setDarkMode} darkMode={darkMode} />
           <Greeting />
-          <About />
+          <About darkMode={toastTheme} />
           <ProjectsDisplay projects={projects} />
           <Experience />
-          <Contact />
+          <Contact darkMode={toastTheme} />
           <Otherpages />
         </div>
+        <ToastContainer
+          toastStyle={{
+            backgroundColor: darkMode ? "black" : "white",
+            color: !darkMode ? "black" : "white",
+          }}
+        />
       </div>
     </>
   );

@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+
 /* installed @emailjs/browser */
-export const Contact = () => {
+export const Contact = (toastTheme) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -62,6 +64,18 @@ export const Contact = () => {
             rows="5"
           ></textarea>
           <input
+            onClick={() => {
+              toast.success("Mail sent, thank you for reaching out!", {
+                position: "top-left",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: { toastTheme },
+              });
+            }}
             type="submit"
             value="Send"
             className="bg-yellow-400 py-3 px-8 mx-auto rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10"

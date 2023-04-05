@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll/modules";
 import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
+import { toast } from "react-toastify";
+import { useFileSystemPublicRoutes } from "../../next.config";
 
-export const About = () => {
+export const About = (toastTheme) => {
   const skills = [
     "HTML",
     "CSS",
@@ -15,6 +17,7 @@ export const About = () => {
     "Redux",
     "Next.js",
   ];
+
   return (
     <section id="about" className="z-10 pt-10 flex flex-col gap-4 md:mt-10">
       <h1 className="text-center md:text-left text-3xl font-bold uppercase mx-auto">
@@ -53,6 +56,18 @@ export const About = () => {
             <a
               href="/tecCVJuanASalas.pdf"
               download="CV_JuanAndresSalas"
+              onClick={() => {
+                toast.success("Resume downloaded", {
+                  position: "top-left",
+                  autoClose: 3000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: { toastTheme },
+                });
+              }}
               className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center"
             >
               <span>Resume</span>
