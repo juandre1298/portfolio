@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll/modules";
+import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 
 export const About = () => {
   const skills = [
@@ -49,14 +50,19 @@ export const About = () => {
                 Contact
               </Link>
             </button>
-            <button className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10">
-              Get Resume
-            </button>
+            <a
+              href="/tecCVJuanASalas.pdf"
+              download="CV_JuanAndresSalas"
+              className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center"
+            >
+              <span>Resume</span>
+              <BsFillFileEarmarkPdfFill />
+            </a>
           </div>
         </div>
         <div className="md:w-1/2">
-          <h2 className="text-center text-xl font-bold">My Skills</h2>
-          <ul className="flex flex-wrap gap-4 mx-4">
+          <h2 className="text-center text-xl font-bold py-4">My Skills</h2>
+          <ul className="flex flex-wrap gap-4 mx-16 justify-center py-4">
             {skills.map((e) => (
               <div
                 key={e}
