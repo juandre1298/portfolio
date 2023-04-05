@@ -22,6 +22,7 @@ import {
   QuizApp,
   tictactoeGame,
   todoListApp,
+  pairgame,
 } from "/public/images.js";
 import { Experience } from "@/components/Experience";
 
@@ -93,7 +94,7 @@ export default function Home() {
     {
       title: "Pair Game",
       url: "https://juandre1298.github.io/JSTodoList/",
-      imgLink: todoListApp,
+      imgLink: pairgame,
       description:
         "This is a usefull tool that we all need if we want to be productive, With this page you can organize all your tasks so that you can bring out your most productive side.",
       technologies: ["HTML", "CSS", "JavaScript"],
@@ -115,7 +116,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={darkMode ? "dark" : ""}>
-        <div className="min-h-screen text-black dark:text-white dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black">
+        <div className="min-h-screen text-stone-600 dark:text-white dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black">
           <div id="stars" className="z-0"></div>
           <div id="stars2" className="z-0"></div>
           {/*          <div id="stars3"></div> */}

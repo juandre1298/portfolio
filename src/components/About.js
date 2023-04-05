@@ -35,8 +35,8 @@ export const About = () => {
             then don't hesitate to contact me.
             <br />
           </p>
-          <div className="flex justify-center my-4">
-            <button className="bg-yellow-400 py-3 px-8 mx-auto rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10">
+          <div className="flex justify-center my-4 gap-4">
+            <button className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10">
               <Link
                 activeClass="active"
                 to="contact"
@@ -48,6 +48,9 @@ export const About = () => {
               >
                 Contact
               </Link>
+            </button>
+            <button className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10">
+              Get Resume
             </button>
           </div>
         </div>
