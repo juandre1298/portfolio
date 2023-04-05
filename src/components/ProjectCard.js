@@ -4,7 +4,10 @@ import Image from "next/image";
 export const ProjectCard = (props) => {
   const { title, url, imgLink, laptopLink, description, technologies } = props;
   return (
-    <div className="bg-gray-200 rounded-md relative group bg-gradient-to-r from-gray-200 to-gray-300 dark:from-cyan-500 dark:to-teal-500  dark:hover:from-teal-500 dark:hover:to-cyan-500   ">
+    <div
+      key={title}
+      className="bg-gray-200 rounded-md relative group bg-gradient-to-r from-gray-200 to-gray-300 dark:from-cyan-500 dark:to-teal-500  dark:hover:from-teal-500 dark:hover:to-cyan-500   "
+    >
       <h2 className="text-3xl capitalize text-center py-4">{title}</h2>
 
       <div className="flex justify-center relative mx-4">

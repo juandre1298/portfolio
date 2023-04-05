@@ -13,8 +13,8 @@ export const ProjectsDisplay = (projects) => {
             <h1 className="text-3xl capitalize text-center py-4">{key}</h1>
             <div className="grid grid-cols-1 gap-4  md:grid-cols-2 lg:grid-cols-3">
               {projects.projects[key].map((e) => (
-                <div>
-                  {console.log(e)}
+                <div key={e.title}>
+                  {/* {console.log(e)} */}
                   <ProjectCard
                     title={e.title}
                     url={e.url}
