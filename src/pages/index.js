@@ -11,111 +11,16 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { useState, useEffect } from "react";
-
-import {
-  laptopfontview1,
-  basicPokedex1,
-  basicPokedex2,
-  calculator,
-  youtubeClone,
-  countdownapp,
-  googleClone,
-  hangManGame,
-  QuizApp,
-  tictactoeGame,
-  todoListApp,
-  pairgame,
-} from "/public/images.js";
-import { Experience } from "@/components/Experience";
+import { projects } from "../pages/data";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  const htmlProjects = [
-    {
-      title: "Youtube Clone",
-      url: "https://juandre1298.github.io/youtubeClone/",
-      imgLink: youtubeClone,
-      description:
-        "This is a clone of a previous version of youtube homepage, in this project I single handle manage to replicate the style and structure of youtube.com webpage. Making it responsive and using several animation features. Please check it out and tell me what you think about it!",
-      technologies: ["HTML", "CSS"],
-    },
-    {
-      title: "Google Clone",
-      url: "https://juandre1298.github.io/GoogleClone/",
-      imgLink: googleClone,
-      description:
-        "This is a clone of google homepage, in this project I single handle manage to replicate the style and structure of youtube.com webpage. Making it responsive and using several animation features. Please check it out and tell me what you think about it!",
-      technologies: ["HTML", "CSS"],
-    },
-  ];
-
-  const JSProjects = [
-    {
-      title: "Awesome Calculator",
-      url: "https://juandre1298.github.io/calculator/",
-      imgLink: calculator,
-      description:
-        "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
-      technologies: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      title: "CountDown",
-      url: "https://juandre1298.github.io/CountDown/",
-      imgLink: countdownapp,
-      description:
-        "This is an app for those people that can't wait for the special dates! with this app you will be able to check exactly how many time is left to any holly day or important date!",
-      technologies: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      title: "Hang Man Game",
-      url: "https://juandre1298.github.io/JSHangmanGame/",
-      imgLink: hangManGame,
-      description:
-        "I create this tribute to the game that is part of the childhood of all of us. I use JavaScript to program the logict that could take or not the life of our little budy! Please enter and save his life and you will see some cool animation as the poor guy appears",
-      technologies: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      title: "Quiz App",
-      url: "https://juandre1298.github.io/JSQuizApp/",
-      imgLink: QuizApp,
-      description:
-        "This is a game that has always save us in those borring school days! So how not incluid ti!? As you case you can interact with the size of the table and it can real-time check hows the winner!",
-      technologies: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      title: "To do List",
-      url: "https://juandre1298.github.io/JSTodoList/",
-      imgLink: todoListApp,
-      description:
-        "This is a usefull tool that we all need if we want to be productive, With this page you can organize all your tasks so that you can bring out your most productive side.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      title: "Pair Game",
-      url: "https://juandre1298.github.io/JSTodoList/",
-      imgLink: pairgame,
-      description:
-        "This is a usefull tool that we all need if we want to be productive, With this page you can organize all your tasks so that you can bring out your most productive side.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-    },
-  ];
-
-  const projects = {
-    javascript: JSProjects,
-    html: htmlProjects,
-    reactJs: htmlProjects,
-  };
+export default function Home(darkMode) {
   const [toastTheme, setToastTheme] = useState("dark");
-  useEffect(
-    () => {
-      darkMode ? setToastTheme("dark") : setToastTheme("light");
-    },
+  useEffect(() => {
+    darkMode ? setToastTheme("dark") : setToastTheme("light");
+  }, [darkMode]);
 
-    darkMode
-  );
   return (
     <>
       <Head>
@@ -124,16 +29,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={darkMode ? "dark" : ""}>
-        <div className="min-h-screen text-stone-600 dark:text-white dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black">
+
+      <div>
+        <div className="min-h-screen  dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black">
           <div id="stars" className="z-0"></div>
           <div id="stars2" className="z-0"></div>
 
-          <Header setDarkMode={setDarkMode} darkMode={darkMode} />
           <Greeting />
           <About darkMode={toastTheme} />
           <ProjectsDisplay projects={projects} />
-          <Experience />
           <Contact darkMode={toastTheme} />
           <Otherpages />
         </div>

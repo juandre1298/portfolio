@@ -19,7 +19,10 @@ export const About = (toastTheme) => {
   ];
 
   return (
-    <section id="about" className="z-10 pt-10 flex flex-col gap-4 md:mt-10">
+    <section
+      id="about"
+      className="z-10 pt-10 flex flex-col gap-4  md:min-h-screen md:justify-center md:pt-0 "
+    >
       <h1 className="text-center md:text-left text-3xl font-bold uppercase mx-auto">
         About me
       </h1>
@@ -40,13 +43,13 @@ export const About = (toastTheme) => {
             <br />
           </p>
           <div className="flex justify-center my-4 gap-4">
-            <button className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10">
+            <button className="bg-yellow-400 py-3 px-6 md:px-8 rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200">
               <Link
                 activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-90}
+                offset={0}
                 duration={500}
                 /* onSetActive={this.handleSetActive} */
               >
@@ -68,7 +71,7 @@ export const About = (toastTheme) => {
                   theme: { toastTheme },
                 });
               }}
-              className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center"
+              className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
             >
               <span>Resume</span>
               <BsFillFileEarmarkPdfFill />

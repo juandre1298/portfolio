@@ -43,7 +43,6 @@ export const Contact = (toastTheme) => {
   };
   const [message, setMessage] = useState(null);
   const [name, setName] = useState(null);
-  console.log(name && message && !error);
 
   return (
     <section
@@ -113,11 +112,11 @@ export const Contact = (toastTheme) => {
               }}
               type="submit"
               value="Send"
-              className="bg-yellow-400 py-3 px-8 mx-auto rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10"
+              className="bg-yellow-400 py-3 px-8 mx-auto rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
             />
           ) : (
             <button
-              className="bg-yellow-400 py-3 px-8 mx-auto rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 opacity-80 dark:opacity-50"
+              className="bg-yellow-400 py-3 px-8 mx-auto rounded-md font-bold uppercase shadow-lg cursor-not-allowed dark:bg-teal-600 z-10 opacity-80 dark:opacity-50"
               onClick={() => {
                 toast.error("Please fill all the requiered inputs", {
                   position: "top-left",

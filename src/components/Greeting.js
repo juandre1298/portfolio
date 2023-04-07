@@ -20,7 +20,7 @@ export const Greeting = () => {
   return (
     <section
       id="greeting"
-      className="pt-[78px] bg-gray-100 dark:bg-inherit md:pt-[90px] font-medium  md:h-screen relative flex flex-col justify-center ]"
+      className="pt-[78px] bg-gray-100 dark:bg-inherit md:pt-[0] font-medium  h-screen relative flex flex-col justify-center ]"
     >
       {/*   <div className="h-screen absolute z-0 dark:hidden bg-red-200">
         <Image
