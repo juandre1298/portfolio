@@ -8,13 +8,15 @@ import { Element, animateScroll as scroll } from "react-scroll";
 export const ProjectsDisplay = (projects) => {
   return (
     <Element name="projects" className="py-8 px-4" id="projects">
-      <h1 className="text-5xl capitalize text-center">projects</h1>
-      {/* {console.log(projects)} */}
+      <h1 className="text-5xl uppercase font-bold text-center">projects</h1>
+      <div className="w-10 h-[3px] md:h-[5px] my-8 rounded-full bg-yellow-400 dark:bg-teal-600 mx-auto  shadow-yellow-400 dark:shadow-teal-800"></div>
       <ul>
         {Object.keys(projects.projects).map((key, i) => (
           <section key={i}>
             {/* {console.log(key)} */}
-            <h1 className="text-3xl capitalize text-center py-4">{key}</h1>
+            <h1 className="text-3xl uppercase text-center py-4 md:py-8">
+              {key}
+            </h1>
             <div className="grid grid-cols-1 gap-4  md:grid-cols-2 lg:grid-cols-3">
               {/*  */}
               {Object.keys(projects.projects[key]).map((e, i) => (

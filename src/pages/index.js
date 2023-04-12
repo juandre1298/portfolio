@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import { ProjectsDisplay } from "../components/ProjectsDisplay";
-
+import { Roboto_Condensed } from "@next/font/google";
 import { Otherpages } from "../components/Otherpages";
 import { Contact } from "@/components/Contact";
 import { Greeting } from "@/components/Greeting";

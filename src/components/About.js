@@ -3,46 +3,25 @@ import { Link } from "react-scroll/modules";
 import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 import { toast } from "react-toastify";
 import { useFileSystemPublicRoutes } from "../../next.config";
+import { aboutMe } from "@/pages/data";
 
 export const About = (toastTheme) => {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JAVASCRIPT",
-    "REACT",
-    "GIT",
-    "GITHUB",
-    "Responsive Design",
-    "TailWind",
-    "Redux",
-    "Next.js",
-  ];
-
   return (
     <section
       id="about"
-      className="z-10 pt-10 flex flex-col gap-4  md:min-h-screen md:justify-center md:pt-0 "
+      className="z-10 flex flex-col md:justify-center gap-4 md:h-screen md:gap-8 md:px-8 object-fit "
     >
-      <h1 className="text-center md:text-left text-3xl font-bold uppercase mx-auto">
+      <h1 className="text-center md:text-left text-3xl lg:text-5xl font-bold uppercase mx-auto">
         About me
       </h1>
-      <div className="w-10 h-[3px] md:h-[5px] rounded-full bg-yellow-400 dark:bg-teal-600 mx-auto my-2 shadow-yellow-400 dark:shadow-teal-800 "></div>
-      <div className="md:flex md:justify-evenly gap-4 md:mx-20 ">
-        <div className="md:w-1/2 ">
-          <p className="px-4 text-justify">
-            I'm a Frontend Web Developer building the Front-end of Websites and
-            Web Applications that leads to the success of the overall product.
-            Check out some of my work in the Projects section. I also like
-            sharing content related to the stuff that I have learned over the
-            years in Web Development so it can help other people of the Dev
-            Community. Feel free to Connect or Follow me on my Linkedin where I
-            post useful content related to Web Development and Programming I'm
-            open to Job opportunities where I can contribute, learn and grow. If
-            you have a good opportunity that matches my skills and experience
-            then don't hesitate to contact me.
+      <div className="w-10 h-[3px] md:h-[5px] rounded-full bg-yellow-400 dark:bg-teal-600 mx-auto  shadow-yellow-400 dark:shadow-teal-800"></div>
+      <div className="md:flex md:justify-evenly ">
+        <div className="md:w-1/2">
+          <p className="px-4 md:px-8 text-justify md:text-xl 2xl:text-2xl">
+            {aboutMe.aboutMe}
             <br />
           </p>
-          <div className="flex justify-center my-4 gap-4">
+          <div className="flex justify-evenly py-8 ">
             <button className="bg-yellow-400 py-3 px-6 md:px-8 rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200">
               <Link
                 activeClass="active"
@@ -78,10 +57,12 @@ export const About = (toastTheme) => {
             </a>
           </div>
         </div>
-        <div className="md:w-1/2">
-          <h2 className="text-center text-xl font-bold py-4">My Skills</h2>
+        <div className="md:w-1/2 flex flex-col 2xl:justify-center lg:gap-8">
+          <h2 className="text-center text-xl font-bold py-4 lg:text-5xl">
+            My Skills
+          </h2>
           <ul className="flex flex-wrap gap-4 mx-16 justify-center py-4">
-            {skills.map((e) => (
+            {aboutMe.skills.map((e) => (
               <div
                 key={e}
                 className="px-2 py-2 bg-stone-200 text-stone-800 rounded-md"

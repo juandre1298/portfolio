@@ -14,7 +14,53 @@ import {
   backgroundBolt,
   pairgame,
 } from "/public/images.js";
-
+const reactProjects = {
+  basicPokedex: {
+    title: "Basic pokedex",
+    url: "https://juandre1298.github.io/calculator/",
+    imgLink: calculator,
+    phone: "/projectImg/phone-calculator.png",
+    description:
+      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  socialMedia: {
+    title: "social media app",
+    url: "https://react-course-69a26.firebaseapp.com/",
+    imgLink: calculator,
+    phone: "/projectImg/phone-calculator.png",
+    description:
+      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  pokedexPro: {
+    title: "pokedex pro",
+    url: "https://react-course-69a26.firebaseapp.com/",
+    imgLink: calculator,
+    phone: "/projectImg/phone-calculator.png",
+    description:
+      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  AwesomeEcommer: {
+    title: "awesome e-commerce",
+    url: "https://react-course-69a26.firebaseapp.com/",
+    imgLink: calculator,
+    phone: "/projectImg/phone-calculator.png",
+    description:
+      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  incrediblePortofolio: {
+    title: "incredible portofolio",
+    url: "https://react-course-69a26.firebaseapp.com/",
+    imgLink: calculator,
+    phone: "/projectImg/phone-calculator.png",
+    description:
+      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+};
 const htmlProjects = {
   youtubeclone: {
     title: "Youtube Clone",
@@ -33,6 +79,7 @@ const htmlProjects = {
     technologies: ["HTML", "CSS"],
   },
 };
+
 const JSProjects = {
   calculator: {
     title: "Awesome Calculator",
@@ -86,7 +133,30 @@ const JSProjects = {
 };
 
 export const projects = {
+  reactJs: reactProjects,
   javascript: JSProjects,
   html: htmlProjects,
-  reactJs: htmlProjects,
+};
+export const aboutMe = {
+  greeting: "Hi!\nI'm Juan Andres Salas!",
+  presentation:
+    "I'm passionate front-end developer with a keen eye for detail and a love for creating visually appealing and user-friendly websites and I'm ready to contribute with my passion and hard work! ",
+  aboutMe:
+    "prom for chat gpt: Write a 500-word cover letter for a self-taught junior front-end developer looking to launch a career in the tech industry. and has experience as a mechanical engineer with strong leadership and teamwork skills. Also he considers himself as an artist and have very good attention to deals. He has experience working with technology companies as a product owner and project manager. however he wants to work in a more related to technology area.  Check out some of my work in the Projects section. Feel free to Connect or Follow me on my Linkedin. I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.",
+  skills: [
+    "HTML",
+    "CSS",
+    "javascript",
+    "Responsive Design",
+    "react",
+    "react-toastify",
+    "fire base",
+    "TailWind",
+    "Redux",
+    "Email js",
+    "Next.js",
+    "Dynamic Routing",
+    "GIT",
+    "GITHUB",
+  ],
 };

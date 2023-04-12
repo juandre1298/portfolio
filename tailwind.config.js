@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: "burtons",
+        Roboto: "Roboto_Condensed",
       },
       display: ["group-hover"],
     },
