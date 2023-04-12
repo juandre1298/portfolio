@@ -38,6 +38,7 @@ const JSProjects = {
     title: "Awesome Calculator",
     url: "https://juandre1298.github.io/calculator/",
     imgLink: calculator,
+    phone: "/projectImg/phone-calculator.png",
     description:
       "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
     technologies: ["HTML", "CSS", "JavaScript"],
