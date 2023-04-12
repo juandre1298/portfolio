@@ -9,8 +9,7 @@ import hangManGame from "/public/projectImg/hangManGame.png";
 import QuizApp from "/public/projectImg/QuizApp.png";
 import tictactoeGame from "/public/projectImg/tictactoeGame.png";
 import todoListApp from "/public/projectImg/todoListApp.png";
-import backgroundBolt from "/public/backgroundBolt.jpg";
-import wallbackground from "/public/wallbackground.jpg";
+
 import pairgame from "/public/projectImg/pairgame.png";
 
 export {
@@ -25,7 +24,5 @@ export {
   QuizApp,
   tictactoeGame,
   todoListApp,
-  wallbackground,
-  backgroundBolt,
   pairgame,
 };

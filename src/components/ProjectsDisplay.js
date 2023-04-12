@@ -3,10 +3,11 @@ import { ProjectCard } from "../components/ProjectCard";
 import { laptopfontview1 } from "/public/images.js";
 import { toast } from "react-toastify";
 import Link from "next/link";
+import { Element, animateScroll as scroll } from "react-scroll";
 
 export const ProjectsDisplay = (projects) => {
   return (
-    <section className="py-8 px-4" id="projects">
+    <Element name="projects" className="py-8 px-4" id="projects">
       <h1 className="text-5xl capitalize text-center">projects</h1>
       {/* {console.log(projects)} */}
       <ul>
@@ -34,6 +35,6 @@ export const ProjectsDisplay = (projects) => {
           </section>
         ))}
       </ul>
-    </section>
+    </Element>
   );
 };

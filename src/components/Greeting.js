@@ -1,9 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { autoTypeWriter } from "./autoTypeWriter";
-import Image from "next/image";
-import mypicture from "/public/mypicture.png";
-import { wallbackground } from "../../public/images";
+
 export const Greeting = () => {
   const [greetingDisp, setGreetingDisp] = useState("|");
   const [presentationText, setPresentationText] = useState("|");
@@ -20,15 +18,8 @@ export const Greeting = () => {
   return (
     <section
       id="greeting"
-      className="pt-[78px] bg-gray-100 dark:bg-inherit md:pt-[0] font-medium  h-screen relative flex flex-col justify-center ]"
+      className="pt-[78px] bg-gray-100 dark:bg-inherit md:pt-[0] font-medium  h-screen relative flex flex-col justify-center "
     >
-      {/*   <div className="h-screen absolute z-0 dark:hidden bg-red-200">
-        <Image
-          src={wallbackground}
-          alt="background"
-          className="object-scaledown"
-        />
-      </div> */}
       <div className="flex flex-col gap-10 mx-10 md:mx-32 py-8">
         <div className="typewriter md:flex md:justify-between">
           <div className="z-10 flex flex-col gap-4 ">
