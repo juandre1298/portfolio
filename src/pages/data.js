@@ -58,7 +58,18 @@ const reactProjects = {
     phone: "/projectImg/phone-calculator.png",
     description:
       "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: [
+      "Next.js",
+      "TailWind",
+      "Responsive Design",
+      "react",
+      "react-toastify",
+      "Email js",
+      "Dynamic Routing",
+      "React Collaps",
+      "GIT",
+      "GITHUB",
+    ],
   },
 };
 const htmlProjects = {
@@ -142,7 +153,9 @@ export const aboutMe = {
   presentation:
     "I'm passionate front-end developer with a keen eye for detail and a love for creating visually appealing and user-friendly websites and I'm ready to contribute with my passion and hard work! ",
   aboutMe:
-    "prom for chat gpt: Write a 500-word cover letter for a self-taught junior front-end developer looking to launch a career in the tech industry. and has experience as a mechanical engineer with strong leadership and teamwork skills. Also he considers himself as an artist and have very good attention to deals. He has experience working with technology companies as a product owner and project manager. however he wants to work in a more related to technology area.  Check out some of my work in the Projects section. Feel free to Connect or Follow me on my Linkedin. I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.",
+    "\tAs  a self-taught junior front-end developer with a background in mechanical engineering and experience in product ownership and project management within technology companies, I bring a unique blend of technical expertise, artistic flair, leadership skills, and teamwork abilities to the tech industry. Proficient in front-end technologies such as HTML, CSS, JavaScript, and React, I have created several projects that showcase my abilities.\n With a deep understanding of product development processes from my mechanical engineering background, I am well-equipped to manage projects, collaborate with cross-functional teams, and achieve results. My artistic mindset and attention to detail make me well-suited for front-end development, where I strive to create visually appealing and user-friendly websites.",
+  moreAboutMe:
+    "\tAs someone who is passionate about contributing, learning, and growing, I am excited about the opportunity to join a team where I can make a meaningful impact. I believe that my skills in mechanical engineering, leadership, teamwork, and artistic creativity make me a valuable asset as a junior front-end developer. I am open to connecting on LinkedIn for further review of my skills and experience.\n I am eager to discuss how I can add value to your organization and contribute to your team's success. Please do not hesitate to contact me to further discuss my qualifications.",
   skills: [
     "HTML",
     "CSS",
