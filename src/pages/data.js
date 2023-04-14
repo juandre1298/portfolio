@@ -20,7 +20,7 @@ import {
 const reactProjects = {
   AwesomeEcommer: {
     title: "awesome e-commerce",
-    url: "https://react-course-69a26.firebaseapp.com/",
+    url: "https://awesome-shop-app.web.app",
     imgLink: [
       ecommerceproducts,
       "/../public/projectImg/ecommerceLogIn.png",
@@ -36,9 +36,7 @@ const reactProjects = {
     technologies: [
       " react",
       "TailWind",
-
       "react-toastify",
-
       "Dynamic Routing",
       "redux-tookits",
       "redux-persist ",
@@ -48,9 +46,10 @@ const reactProjects = {
   },
   basicPokedex: {
     title: "Basic pokedex",
-    url: "https://juandre1298.github.io/calculator/",
+    url: "https://basicpokedex.web.app/",
     imgLink: [basicPokedex1, "/../public/projectImg/basicPokedex2.png"],
     gh: "https://github.com/juandre1298/pokedex-v1",
+    phone: "/../public/projectImg/basicPokedexPhone.png",
     description:
       "As a junior front-end developer, I found building a Pokedex using PokeAPI and React to be an excellent opportunity. It provided practical application of my skills, opportunities to learn, room for creativity, and a showcase for my portfolio. I applied my front-end development skills to a real-world project, deepened my understanding of React concepts, showcased my creativity through UI design, and demonstrated my abilities to potential employers. This project allowed me to gain practical experience and enhanced my employability in the competitive tech industry.",
     technologies: [
@@ -84,7 +83,7 @@ const reactProjects = {
   },
   pokedexPro: {
     title: "pokedex",
-    url: "https://react-course-69a26.firebaseapp.com/",
+    url: "https://pokedexpro-faece.web.app/",
     imgLink: pokedexPro,
     phone: "/projectImg/phone-calculator.png",
     description:
@@ -98,25 +97,29 @@ const reactProjects = {
     imgLink: [
       portofolioDarkMainPage,
       "/../public/projectImg/portofolioLightMainPage.png",
+      "/../public/projectImg/portofolioLightAboutMePage.png",
       "/../public/projectImg/portofolioDarkAboutMePage.png",
+      "/../public/projectImg/portofolioLightProjects.png",
       "/../public/projectImg/portofolioDarkProjects.png",
-      "/../public/projectImg/portofolioDarkDetails.png",
       "/../public/projectImg/portofolioLightDetails.png",
+      "/../public/projectImg/portofolioDarkDetails.png",
       "/../public/projectImg/protofolioLightContactMePage.png",
       "/../public/projectImg/protofolioDarkContactMePage.png",
     ],
     phone: [
-      "/../public/projectImg/portopholioPhoneLightAboutMe.png",
-      "/../public/projectImg/portopholioPhoneDarkAboutMe.png",
-      "/../public/projectImg/portofolioPhoneLightProjects.png",
-      "/../public/projectImg/portofolioPhoneLightMainPage.png",
-      "/../public/projectImg/portofolioPhoneLightDetails.png",
-      "/../public/projectImg/portofolioPhoneLightContactMe.png",
       "/../public/projectImg/portofolioPhoneDarkMainPage.png",
-      "/../public/projectImg/portofolioPhoneDarkContactMe.png",
+      "/../public/projectImg/portofolioPhoneLightMainPage.png",
+      "/../public/projectImg/portofolioPhoneLightAboutMePage.png",
+      "/../public/projectImg/portofolioPhoneDarkAboutMePage.png",
+      "/../public/projectImg/portofolioPhoneLightProjects.png",
+      "/../public/projectImg/portofolioPhoneDarkProjects.png",
+      "/../public/projectImg/portofolioPhoneLightDetails.png",
+      "/../public/projectImg/portofolioPhoneDarkDetails.png",
+      "/../public/projectImg/portofolioPhoneLightContactMePage.png",
+      "/../public/projectImg/portofolioPhoneDarkContactMePage.png",
     ],
     description:
-      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
+      "I am pleased to share that I have successfully managed to develop and train my skills as a junior software engineer while creating an intuitive UI and responsive portfolio webpage using Next.js, React.js, TailwindCSS, Email.js, and other technologies. Throughout the project, I gained valuable hands-on experience in front-end development, UI/UX design, JavaScript, state management, API integration, deployment, problem-solving, and collaboration. This accomplishment has equipped me with a diverse range of skills, showcasing my ability to create professional-quality webpages using modern web technologies.",
     technologies: [
       "Next.js",
       "TailWind",
@@ -155,7 +158,7 @@ const JSProjects = {
     title: "Awesome Calculator",
     url: "https://juandre1298.github.io/calculator/",
     imgLink: calculator,
-    phone: "/projectImg/phone-calculator.png",
+    phone: "/../public/projectImg/phone-calculator.png",
     description:
       "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
     technologies: ["HTML", "CSS", "JavaScript"],

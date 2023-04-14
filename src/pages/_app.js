@@ -1,10 +1,10 @@
-import "@/styles/globals.css";
-import "@/styles/sky.css";
+import "/src/styles/globals.css";
+import "/src/styles/sky.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
-import { Roboto } from "@next/font/google";
-import { Header } from "@/components/Header";
+import { Roboto } from "next/font/google";
+import { Header } from "/src/components/Header";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -13,6 +13,7 @@ const roboto = Roboto({
 
 export default function App({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(true);
+
   return (
     <main className={roboto.className}>
       <div className={darkMode ? "dark" : ""}>

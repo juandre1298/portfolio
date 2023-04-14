@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { projects } from "../data";
-import { Otherpages } from "@/components/Otherpages";
+import { Otherpages } from "/src/components/Otherpages";
 import Image from "next/image";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
@@ -60,66 +60,62 @@ export default function index() {
           </div>
 
           <div className="flex flex-col gap-16 md:flex-row mx-4 xl:mx-32">
-            <div className="  md:w-1/2 relative ">
-              <div className="  flex justify-center ">
-                <img
-                  src="/laptop-computer-with-white-screen-keyboard/desktop.png"
-                  alt="phone"
-                  className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] "
-                />
-
-                {projects[group][name].imgLink.length ? (
-                  <>
-                    {/* {console.log(currentSlide)} */}
-                    <Image
-                      src={projects[group][name].imgLink[currentSlide]}
-                      alt="screen"
-                      width="0"
-                      height="0"
-                      sizes="100vw"
-                      className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
-                    />
-                  </>
-                ) : (
-                  <Image
-                    src={projects[group][name].imgLink}
-                    alt="screen"
-                    className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute  scale-down w-[91%] mx-auto top-[6%]"
+            <div className="  md:w-1/2  h-full relative">
+              <div className="relative">
+                {/* screen */}
+                <div className="  flex justify-center ">
+                  <img
+                    src="/laptop-computer-with-white-screen-keyboard/desktop.png"
+                    alt="phone"
+                    className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] "
                   />
+
+                  {projects[group][name].imgLink.length ? (
+                    <>
+                      {/* {console.log(currentSlide)} */}
+                      <Image
+                        src={projects[group][name].imgLink[currentSlide]}
+                        alt="screen"
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
+                      />
+                    </>
+                  ) : (
+                    <Image
+                      src={projects[group][name].imgLink}
+                      alt="screen"
+                      className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute  scale-down w-[91%] mx-auto top-[6%]"
+                    />
+                  )}
+                </div>
+                {/* phone */}
+                {projects[group][name].phone && (
+                  <div className="group">
+                    {projects[group][name].phone.length ? (
+                      <img
+                        className="absolute rounded-xl bottom-[0.95%]  shadow-2xl h-[48%] right-[4.95%] group-hover:right-[6%] group-hover:bottom-[1.9%] group-hover:h-[96%] duration-1000"
+                        src={projects[group][name].phone[
+                          currentSlide
+                        ].substring(10)}
+                      />
+                    ) : (
+                      <img
+                        className="absolute rounded-xl bottom-[0.95%]  shadow-2xl h-[48%] right-[4.95%] group-hover:right-[6%] group-hover:bottom-[1.9%] group-hover:h-[96%] duration-1000"
+                        src={projects[group][name].phone.substring(10)}
+                      />
+                    )}
+                    <img
+                      src="/laptop-computer-with-white-screen-keyboard/phone_14_01.png"
+                      alt="phone"
+                      className=" absolute bottom-0  shadow-2xl h-[50%] right-[3.9%]  group-hover:h-[100%] duration-1000"
+                    />
+                  </div>
                 )}
               </div>
-              {projects[group][name].phone &&
-                (projects[group][name].phone.length ? (
-                  <div className="group">
-                    <Image
-                      src={projects[group][name].phone[currentSlide]}
-                      alt="phone version"
-                      width="0"
-                      height="0"
-                      sizes="100vw"
-                      className="object-contain absolute h-[48%] w-[50%]  bottom-[1.2%] right-[-12%] rounded-xl drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[96%] group-hover:right-[-25%] group-hover:bottom-[1.5%]  duration-1000"
-                    />
-                    <img
-                      src="/laptop-computer-with-white-screen-keyboard/phone_14_01.png"
-                      alt="phone"
-                      className="object-contain absolute bottom-0  shadow-2xl h-[50%] right-[3.9%] drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[100%] duration-1000"
-                    />
-                  </div>
-                ) : (
-                  <div className="group">
-                    <img
-                      src={projects[group][name].phone}
-                      alt="phone version"
-                      className="object-contain absolute h-[48%]  bottom-[1.2%] right-[5%] rounded-xl drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[96%] group-hover:right-[6%] group-hover:bottom-[1.5%]  duration-1000"
-                    />
-                    <img
-                      src="/laptop-computer-with-white-screen-keyboard/phone_14_01.png"
-                      alt="phone"
-                      className="object-contain absolute bottom-0  shadow-2xl h-[50%] right-[3.9%] drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[100%] duration-1000"
-                    />
-                  </div>
-                ))}
-              <div className="flex gap-4 absolute bottom-[17%] left-[5%]">
+              {/* buttons */}
+              <div className="flex gap-4 md:absolute bottom-[16%] left-[5%]">
                 <button
                   onClick={() => setExpand(!expand)}
                   className="p-4 border-[1px] border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "

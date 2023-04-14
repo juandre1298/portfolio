@@ -4,6 +4,8 @@ import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { Link as LinkScroll } from "react-scroll/modules";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 
 export const Header = ({ setDarkMode, darkMode }) => {
   return (
@@ -27,7 +29,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
         </button>
       </div>
       <div className="w-full lg:w-[600px]">
-        <ul className="flex flex-wrap justify-between lg:justify-right mx-auto mt-4 sm:font-bold md:mt-0 gap-2 lg:gap-6  px-2 md:py-2 md:ml-8">
+        <ul className="flex flex-wrap justify-between items-center lg:justify-right mx-auto mt-4 sm:font-bold md:mt-0 gap-2 lg:gap-6  px-2 md:py-2 md:ml-8">
           <li className="text-sm md:text-xl md:font-bold hover:text-orange-700 dark:hover:text-teal-600 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
             <button>
               <LinkScroll
@@ -87,6 +89,28 @@ export const Header = ({ setDarkMode, darkMode }) => {
                 Contact
               </LinkScroll>
             </button>
+          </li>
+          <li>
+            <a
+              href="/public/tecCVJuanASalas.pdf"
+              download="CV_JuanAndresSalas"
+              onClick={() => {
+                toast.success("Resume downloaded", {
+                  position: "top-left",
+                  autoClose: 3000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: { toastTheme },
+                });
+              }}
+              className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
+            >
+              <span>Resume</span>
+              <BsFillFileEarmarkPdfFill />
+            </a>
           </li>
         </ul>
       </div>
