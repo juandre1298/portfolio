@@ -14,7 +14,7 @@ import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import { BiExpand } from "react-icons/bi";
 
-export default function Index() {
+export default function ndex() {
   const router = useRouter();
   const [projectData, setProjectData] = useState("");
   const [group, setGroup] = useState("");
@@ -30,7 +30,7 @@ export default function Index() {
 
       setLoading(false);
     }
-  }, [router.isReady]);
+  }, [router.isReady, router.query.id]);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const prevSlide = () => {
