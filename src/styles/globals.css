@@ -9,4 +9,12 @@
 
 .ReactCollapse--collapse {
   transition: height 500ms;
+  white-space: pre-wrap;
+}
+.my-component {
+  background: red;
+}
+
+.fullscreen-enabled .my-component {
+  background: red;
 }

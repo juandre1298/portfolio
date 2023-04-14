@@ -19,7 +19,7 @@ export const About = (toastTheme) => {
       <div className="w-10 h-[3px] md:h-[5px] rounded-full bg-yellow-400 dark:bg-teal-600 mx-auto  shadow-yellow-400 dark:shadow-teal-800"></div>
       <div className="md:flex md:justify-evenly ">
         <div className="md:w-1/2 px-4 md:px-8 text-justify md:text-xl 2xl:text-2xl">
-          <div className=" whitespace-break-spaces ">{aboutMe.aboutMe}</div>
+          <div className=" whitespace-pre-wrap ">{aboutMe.aboutMe}</div>
           <div
           /*   className={
               showMore
@@ -47,7 +47,6 @@ export const About = (toastTheme) => {
                 smooth={true}
                 offset={0}
                 duration={500}
-                /* onSetActive={this.handleSetActive} */
               >
                 Contact
               </Link>

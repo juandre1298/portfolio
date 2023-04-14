@@ -1,61 +1,120 @@
 import {
   laptopfontview1,
   basicPokedex1,
-  basicPokedex2,
   calculator,
+  portofolioDarkMainPage,
   youtubeClone,
   countdownapp,
+  ecommerceproducts,
+  pokedexPro,
   googleClone,
   hangManGame,
   QuizApp,
   tictactoeGame,
   todoListApp,
   wallbackground,
+  socialMediaPosts,
   backgroundBolt,
   pairgame,
 } from "/public/images.js";
 const reactProjects = {
+  AwesomeEcommer: {
+    title: "awesome e-commerce",
+    url: "https://react-course-69a26.firebaseapp.com/",
+    imgLink: [
+      ecommerceproducts,
+      "/../public/projectImg/ecommerceLogIn.png",
+      "/../public/projectImg/ecommerceLogin2.png",
+      "/../public/projectImg/ecommercecart.png",
+      "/../public/projectImg/ecommerceproductdetail.png",
+      "/../public/projectImg/ecommerceproducts.png",
+      "/../public/projectImg/ecommercemainpage.png",
+    ],
+
+    description:
+      "I have successfully built a fully functional e-commerce website using React, TailwindCSS, and Firebase. This project showcases my solid understanding of front-end development and back-end integration, as well as my ability to create web applications from scratch and deploy them live. As a junior developer, this experience has been invaluable in enhancing my skills in component-based development, state management, and utilizing modern tools and technologies. It demonstrates my commitment to staying updated with the latest trends in the tech industry and my ability to confidently build real-world projects. I am excited to continue my career journey, utilizing these skills and experiences to contribute to future projects and further grow as a developer.",
+    technologies: [
+      " react",
+      "TailWind",
+
+      "react-toastify",
+
+      "Dynamic Routing",
+      "redux-tookits",
+      "redux-persist ",
+      "GIT",
+      "GITHUB",
+    ],
+  },
   basicPokedex: {
     title: "Basic pokedex",
     url: "https://juandre1298.github.io/calculator/",
-    imgLink: calculator,
-    phone: "/projectImg/phone-calculator.png",
+    imgLink: [basicPokedex1, "/../public/projectImg/basicPokedex2.png"],
+    gh: "https://github.com/juandre1298/pokedex-v1",
     description:
-      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "As a junior front-end developer, I found building a Pokedex using PokeAPI and React to be an excellent opportunity. It provided practical application of my skills, opportunities to learn, room for creativity, and a showcase for my portfolio. I applied my front-end development skills to a real-world project, deepened my understanding of React concepts, showcased my creativity through UI design, and demonstrated my abilities to potential employers. This project allowed me to gain practical experience and enhanced my employability in the competitive tech industry.",
+    technologies: [
+      "React",
+      "Redux",
+      "API axious",
+      "CSS",
+      "JSX",
+      "react-router-dom",
+    ],
   },
   socialMedia: {
     title: "social media app",
     url: "https://react-course-69a26.firebaseapp.com/",
-    imgLink: calculator,
-    phone: "/projectImg/phone-calculator.png",
+    imgLink: [
+      socialMediaPosts,
+
+      "/../public/projectImg/socialMediaAppGoogleLogin.png",
+      "/../public/projectImg/socialMediaAppPost.png",
+    ],
+
     description:
-      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "I have successfully developed and deployed a TypeScript React app using Firebase for user authentication and deployment. With the use of technologies such as Redux, API management, and react-router-dom, I have gained valuable experience as a junior front-end developer. The incorporation of TypeScript and Firebase has contributed to a secure application, demonstrating my growing proficiency in front-end development. I am proud of this accomplishment and excited to continue learning and improving my skills in the dynamic tech industry.",
+    technologies: [
+      "typescript",
+      "React Js",
+      "FireBase ",
+      "CSS",
+      "react-router-dom",
+    ],
   },
   pokedexPro: {
-    title: "pokedex pro",
+    title: "pokedex",
     url: "https://react-course-69a26.firebaseapp.com/",
-    imgLink: calculator,
+    imgLink: pokedexPro,
     phone: "/projectImg/phone-calculator.png",
     description:
       "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
-  AwesomeEcommer: {
-    title: "awesome e-commerce",
-    url: "https://react-course-69a26.firebaseapp.com/",
-    imgLink: calculator,
-    phone: "/projectImg/phone-calculator.png",
-    description:
-      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
-    technologies: ["HTML", "CSS", "JavaScript"],
-  },
+
   incrediblePortofolio: {
     title: "incredible portofolio",
     url: "https://react-course-69a26.firebaseapp.com/",
-    imgLink: calculator,
-    phone: "/projectImg/phone-calculator.png",
+    imgLink: [
+      portofolioDarkMainPage,
+      "/../public/projectImg/portofolioLightMainPage.png",
+      "/../public/projectImg/portofolioDarkAboutMePage.png",
+      "/../public/projectImg/portofolioDarkProjects.png",
+      "/../public/projectImg/portofolioDarkDetails.png",
+      "/../public/projectImg/portofolioLightDetails.png",
+      "/../public/projectImg/protofolioLightContactMePage.png",
+      "/../public/projectImg/protofolioDarkContactMePage.png",
+    ],
+    phone: [
+      "/../public/projectImg/portopholioPhoneLightAboutMe.png",
+      "/../public/projectImg/portopholioPhoneDarkAboutMe.png",
+      "/../public/projectImg/portofolioPhoneLightProjects.png",
+      "/../public/projectImg/portofolioPhoneLightMainPage.png",
+      "/../public/projectImg/portofolioPhoneLightDetails.png",
+      "/../public/projectImg/portofolioPhoneLightContactMe.png",
+      "/../public/projectImg/portofolioPhoneDarkMainPage.png",
+      "/../public/projectImg/portofolioPhoneDarkContactMe.png",
+    ],
     description:
       "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
     technologies: [
@@ -153,21 +212,21 @@ export const aboutMe = {
   presentation:
     "I'm passionate front-end developer with a keen eye for detail and a love for creating visually appealing and user-friendly websites and I'm ready to contribute with my passion and hard work! ",
   aboutMe:
-    "\tAs  a self-taught junior front-end developer with a background in mechanical engineering and experience in product ownership and project management within technology companies, I bring a unique blend of technical expertise, artistic flair, leadership skills, and teamwork abilities to the tech industry. Proficient in front-end technologies such as HTML, CSS, JavaScript, and React, I have created several projects that showcase my abilities.\n With a deep understanding of product development processes from my mechanical engineering background, I am well-equipped to manage projects, collaborate with cross-functional teams, and achieve results. My artistic mindset and attention to detail make me well-suited for front-end development, where I strive to create visually appealing and user-friendly websites.",
+    "\tAs a Jr. front-end developer with a background in mechanical engineering and experience in product ownership and project management within technology companies, I bring a unique blend of technical expertise, artistic flair, leadership skills, and teamwork abilities to the tech industry. Proficient in front-end technologies such as HTML, CSS, JavaScript, and React, I have created several projects that showcase my abilities.\n With a deep understanding of product development processes from my mechanical engineering background, I am well-equipped to manage projects, collaborate with cross-functional teams, and achieve results. My artistic mindset and attention to detail make me well-suited for front-end development, where I strive to create visually appealing and user-friendly websites.",
   moreAboutMe:
     "\tAs someone who is passionate about contributing, learning, and growing, I am excited about the opportunity to join a team where I can make a meaningful impact. I believe that my skills in mechanical engineering, leadership, teamwork, and artistic creativity make me a valuable asset as a junior front-end developer. I am open to connecting on LinkedIn for further review of my skills and experience.\n I am eager to discuss how I can add value to your organization and contribute to your team's success. Please do not hesitate to contact me to further discuss my qualifications.",
   skills: [
+    "React",
+    "Javascript",
+    "Next.js",
     "HTML",
     "CSS",
-    "javascript",
     "Responsive Design",
-    "react",
     "react-toastify",
-    "fire base",
+    "Fire-Base",
     "TailWind",
     "Redux",
     "Email js",
-    "Next.js",
     "Dynamic Routing",
     "GIT",
     "GITHUB",

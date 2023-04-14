@@ -6,7 +6,8 @@ import { projects } from "../data";
 import { Otherpages } from "@/components/Otherpages";
 import Image from "next/image";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
-import { IBM_Plex_Mono } from "next/font/google";
+import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
+import { BiExpand } from "react-icons/bi";
 
 export default function index() {
   const router = useRouter();
@@ -14,6 +15,8 @@ export default function index() {
   const [group, setGroup] = useState("");
   const [name, setName] = useState("");
   const [loading, setLoading] = useState(true);
+  const [expand, setExpand] = useState(false);
+
   useEffect(() => {
     if (router.isReady) {
       const data = router.query.id.split("-");
@@ -23,6 +26,22 @@ export default function index() {
       setLoading(false);
     }
   }, [router.isReady]);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      currentSlide === 0
+        ? projects[group][name].imgLink.length - 1
+        : (prev) => prev - 1
+    );
+  };
+  const nextSlide = () => {
+    setCurrentSlide(
+      currentSlide === projects[group][name].imgLink.length - 1
+        ? 0
+        : (prev) => prev + 1
+    );
+  };
 
   return (
     <section className="min-h-screen  dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black sm:pt-[90px] pt-[78px]">
@@ -48,33 +67,88 @@ export default function index() {
                   alt="phone"
                   className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] "
                 />
-                <Image
-                  src={projects[group][name].imgLink}
-                  alt="screen"
-                  className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute  scale-down w-[91%] mx-auto top-[6%]"
-                />
+
+                {projects[group][name].imgLink.length ? (
+                  <>
+                    {/* {console.log(currentSlide)} */}
+                    <Image
+                      src={projects[group][name].imgLink[currentSlide]}
+                      alt="screen"
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
+                    />
+                  </>
+                ) : (
+                  <Image
+                    src={projects[group][name].imgLink}
+                    alt="screen"
+                    className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute  scale-down w-[91%] mx-auto top-[6%]"
+                  />
+                )}
               </div>
-              {projects[group][name].phone && (
-                <div className="group">
-                  <img
-                    src={projects[group][name].phone}
-                    alt="phone version"
-                    className="object-contain absolute h-[48%]  bottom-[1.2%] right-[5%] rounded-xl drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[96%] group-hover:right-[6%] group-hover:bottom-[1.5%]  duration-1000"
-                  />
-                  <img
-                    src="/laptop-computer-with-white-screen-keyboard/phone_14_01.png"
-                    alt="phone"
-                    className="object-contain absolute bottom-0  shadow-2xl h-[50%] right-[3.9%] drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[100%] duration-1000"
-                  />
+              {projects[group][name].phone &&
+                (projects[group][name].phone.length ? (
+                  <div className="group">
+                    <Image
+                      src={projects[group][name].phone[currentSlide]}
+                      alt="phone version"
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="object-contain absolute h-[48%] w-[50%]  bottom-[1.2%] right-[-12%] rounded-xl drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[96%] group-hover:right-[-25%] group-hover:bottom-[1.5%]  duration-1000"
+                    />
+                    <img
+                      src="/laptop-computer-with-white-screen-keyboard/phone_14_01.png"
+                      alt="phone"
+                      className="object-contain absolute bottom-0  shadow-2xl h-[50%] right-[3.9%] drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[100%] duration-1000"
+                    />
+                  </div>
+                ) : (
+                  <div className="group">
+                    <img
+                      src={projects[group][name].phone}
+                      alt="phone version"
+                      className="object-contain absolute h-[48%]  bottom-[1.2%] right-[5%] rounded-xl drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[96%] group-hover:right-[6%] group-hover:bottom-[1.5%]  duration-1000"
+                    />
+                    <img
+                      src="/laptop-computer-with-white-screen-keyboard/phone_14_01.png"
+                      alt="phone"
+                      className="object-contain absolute bottom-0  shadow-2xl h-[50%] right-[3.9%] drop-shadow-[0_2px_5px_rgba(0,0,0,1)] group-hover:h-[100%] duration-1000"
+                    />
+                  </div>
+                ))}
+              <div className="flex gap-4 absolute bottom-[17%] left-[5%]">
+                <button
+                  onClick={() => setExpand(!expand)}
+                  className="p-4 border-[1px] border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
+                >
+                  <BiExpand />
+                </button>
+                <div className="flex gap-4">
+                  <div
+                    onClick={prevSlide}
+                    className="p-4 border-[1px] border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
+                  >
+                    <HiArrowLeft />
+                  </div>
+                  <div
+                    onClick={nextSlide}
+                    className="p-4 border-[1px] border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
+                  >
+                    <HiArrowRight />
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
+
             <div className="flex flex-col justify-center items-center gap-10 md:w-1/2">
-              <div className="text-center">
+              <div className="text-justify md:text-xl">
                 {projects[group][name].description}
               </div>
               <div>
-                <h2 className="text-center text-bold">Tools Used</h2>
+                <h2 className="text-center text-bold text-2xl">Tools Used</h2>
                 <ul className="flex flex-wrap gap-4  md:mx-16 justify-center py-4">
                   {projects[group][name].technologies.map((tech) => {
                     return (
@@ -98,7 +172,7 @@ export default function index() {
                 </a>
                 <a
                   className="bg-yellow-400 py-3 px-3 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
-                  href={projects[group][name].url}
+                  href={projects[group][name].gh}
                 >
                   Code Source
                   <AiFillGithub className="text-2xl" />
