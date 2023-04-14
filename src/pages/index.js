@@ -11,7 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { useState, useEffect } from "react";
-import { projects } from "../pages/data";
+import { projects } from "../components/data";
 
 const inter = Inter({ subsets: ["latin"] });
 

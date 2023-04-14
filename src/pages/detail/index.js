@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import Link from "next/link";
 import { ProjectsDisplay } from "@/components/ProjectsDisplay";
-import { projects } from "../data";
+import { projects } from "../../components/data";
 
 const index = () => {
   return (

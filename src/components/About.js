@@ -3,7 +3,7 @@ import { Link } from "react-scroll/modules";
 import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 import { toast } from "react-toastify";
 import { useFileSystemPublicRoutes } from "../../next.config";
-import { aboutMe } from "/src/pages/data";
+import { aboutMe } from "/src/components/data";
 import { Collapse } from "react-collapse";
 
 export const About = (toastTheme) => {

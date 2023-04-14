@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { projects } from "../data";
+import { projects } from "../../components/data";
 import { Otherpages } from "/src/components/Otherpages";
 import Image from "next/image";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";

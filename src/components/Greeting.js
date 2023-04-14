@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { autoTypeWriter } from "./autoTypeWriter";
-import { aboutMe } from "@/pages/data";
+import { aboutMe } from "@/components/data";
 
 export const Greeting = () => {
   const [greetingDisp, setGreetingDisp] = useState("|");
