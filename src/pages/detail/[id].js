@@ -14,7 +14,7 @@ import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import { BiExpand } from "react-icons/bi";
 
-export default function ndex() {
+export default function Index() {
   const router = useRouter();
   const [projectData, setProjectData] = useState("");
   const [group, setGroup] = useState("");
