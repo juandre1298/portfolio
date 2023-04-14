@@ -17,6 +17,7 @@ import {
   backgroundBolt,
   pairgame,
 } from "/public/images.js";
+
 const reactProjects = {
   AwesomeEcommer: {
     title: "awesome e-commerce",
@@ -93,7 +94,7 @@ const reactProjects = {
 
   incrediblePortofolio: {
     title: "incredible portofolio",
-    url: "https://react-course-69a26.firebaseapp.com/",
+    url: "https://portofolio-juandretech.vercel.app/",
     imgLink: [
       portofolioDarkMainPage,
       "/../public/projectImg/portofolioLightMainPage.png",

@@ -92,7 +92,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
           </li>
           <li>
             <a
-              href="/public/tecCVJuanASalas.pdf"
+              href="/public/CV_JuanAndresSalas.pdf"
               download="CV_JuanAndresSalas"
               onClick={() => {
                 toast.success("Resume downloaded", {
@@ -103,7 +103,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
                   pauseOnHover: true,
                   draggable: true,
                   progress: undefined,
-                  theme: { toastTheme },
+                  theme: darkMode ? "dark" : "light",
                 });
               }}
               className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
