@@ -1,6 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import React from "react";
+
 import Link from "next/link";
+
+import { useState } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { projects } from "../data";
 import { Otherpages } from "/src/components/Otherpages";
@@ -9,7 +14,7 @@ import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import { BiExpand } from "react-icons/bi";
 
-export default function index() {
+export default function Index() {
   const router = useRouter();
   const [projectData, setProjectData] = useState("");
   const [group, setGroup] = useState("");
