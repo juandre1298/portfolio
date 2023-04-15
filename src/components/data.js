@@ -1,36 +1,29 @@
 import {
-  laptopfontview1,
-  basicPokedex1,
-  calculator,
+  ecommerceWeb,
+  protafolioPhone,
+  protafolioWeb,
   portofolioDarkMainPage,
+  ecommerceproducts,
+  socialMediaPosts,
+  laptopfontview1,
+  calculator,
   youtubeClone,
   countdownapp,
-  ecommerceproducts,
-  pokedexPro,
   googleClone,
   hangManGame,
   QuizApp,
   tictactoeGame,
   todoListApp,
-  wallbackground,
-  socialMediaPosts,
-  backgroundBolt,
   pairgame,
+  basicPokedex1,
+  pokedexPro,
 } from "/public/images.js";
 
 const reactProjects = {
   AwesomeEcommerce: {
     title: "Awesome E-commerce ",
     url: "https://awesome-shop-app.web.app",
-    imgLink: [
-      ecommerceproducts,
-      "/../public/projectImg/ecommerceLogIn.png",
-      "/../public/projectImg/ecommerceLogin2.png",
-      "/../public/projectImg/ecommercecart.png",
-      "/../public/projectImg/ecommerceproductdetail.png",
-      "/../public/projectImg/ecommerceproducts.png",
-      "/../public/projectImg/ecommercemainpage.png",
-    ],
+    imgLink: ecommerceWeb,
 
     description:
       "I have successfully built a fully functional e-commerce website using React, TailwindCSS, and Firebase. This project showcases my solid understanding of front-end development and back-end integration, as well as my ability to create web applications from scratch and deploy them live. As a junior developer, this experience has been invaluable in enhancing my skills in component-based development, state management, and utilizing modern tools and technologies. It demonstrates my commitment to staying updated with the latest trends in the tech industry and my ability to confidently build real-world projects. I am excited to continue my career journey, utilizing these skills and experiences to contribute to future projects and further grow as a developer.",
@@ -95,18 +88,7 @@ const reactProjects = {
   incrediblePortofolio: {
     title: "incredible portofolio",
     url: "https://portofolio-juandretech.vercel.app/",
-    imgLink: [
-      portofolioDarkMainPage,
-      "/../public/projectImg/portofolioLightMainPage.png",
-      "/../public/projectImg/portofolioLightAboutMePage.png",
-      "/../public/projectImg/portofolioDarkAboutMePage.png",
-      "/../public/projectImg/portofolioLightProjects.png",
-      "/../public/projectImg/portofolioDarkProjects.png",
-      "/../public/projectImg/portofolioLightDetails.png",
-      "/../public/projectImg/portofolioDarkDetails.png",
-      "/../public/projectImg/protofolioLightContactMePage.png",
-      "/../public/projectImg/protofolioDarkContactMePage.png",
-    ],
+    imgLink: protafolioWeb,
     phone: [
       "/../public/projectImg/portofolioPhoneDarkMainPage.png",
       "/../public/projectImg/portofolioPhoneLightMainPage.png",

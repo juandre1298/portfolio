@@ -12,12 +12,75 @@ import socialMediaPosts from "/public/projectImg/socialMediaAppPosts.png";
 import pairgame from "/public/projectImg/pairgame.png";
 import pokedexPro from "/public/projectImg/pokedexPro.png";
 import portofolioDarkMainPage from "/public/projectImg/portofolioDarkMainPage.png";
+// import images of ecommerce webpages
+import ecommerceLogIn from "public/projectImg/ecommerceLogIn.png";
+import ecommerceLogin2 from "public/projectImg/ecommerceLogin2.png";
+import ecommercecart from "public/projectImg/ecommercecart.png";
+import ecommerceproductdetail from "public/projectImg/ecommerceproductdetail.png";
+import ecommerceproducts from "public/projectImg/ecommerceproducts.png";
+import ecommercemainpage from "public/projectImg/ecommercemainpage.png";
 
-import ecommerceproducts from "/public/projectImg/ecommerceproducts.png";
+const ecommerceWeb = [
+  ecommerceproducts,
+  ecommerceLogIn,
+  ecommerceLogin2,
+  ecommercecart,
+  ecommerceproductdetail,
+  ecommercemainpage,
+];
+
+// import protafolio images
+import portofolioLightMainPage from "/public/projectImg/portofolioLightMainPage.png";
+import portofolioLightAboutMePage from "/public/projectImg/portofolioLightAboutMePage.png";
+import portofolioDarkAboutMePage from "/public/projectImg/portofolioDarkAboutMePage.png";
+import portofolioLightProjects from "/public/projectImg/portofolioLightProjects.png";
+import portofolioDarkProjects from "/public/projectImg/portofolioDarkProjects.png";
+import portofolioLightDetails from "/public/projectImg/portofolioLightDetails.png";
+import portofolioDarkDetails from "/public/projectImg/portofolioDarkDetails.png";
+import protofolioLightContactMePage from "/public/projectImg/protofolioLightContactMePage.png";
+import protofolioDarkContactMePage from "/public/projectImg/protofolioDarkContactMePage.png";
+import portofolioPhoneDarkMainPage from "/public/projectImg/portofolioPhoneDarkMainPage.png";
+import portofolioPhoneLightMainPage from "/public/projectImg/portofolioPhoneLightMainPage.png";
+import portofolioPhoneLightAboutMePage from "/public/projectImg/portofolioPhoneLightAboutMePage.png";
+import portofolioPhoneDarkAboutMePage from "/public/projectImg/portofolioPhoneDarkAboutMePage.png";
+import portofolioPhoneLightProjects from "/public/projectImg/portofolioPhoneLightProjects.png";
+import portofolioPhoneDarkProjects from "/public/projectImg/portofolioPhoneDarkProjects.png";
+import portofolioPhoneLightDetails from "/public/projectImg/portofolioPhoneLightDetails.png";
+import portofolioPhoneDarkDetails from "/public/projectImg/portofolioPhoneDarkDetails.png";
+import portofolioPhoneLightContactMePage from "/public/projectImg/portofolioPhoneLightContactMePage.png";
+import portofolioPhoneDarkContactMePage from "/public/projectImg/portofolioPhoneDarkContactMePage.png";
+
+const protafolioPhone = [
+  portofolioPhoneDarkMainPage,
+  portofolioPhoneLightMainPage,
+  portofolioPhoneLightAboutMePage,
+  portofolioPhoneDarkAboutMePage,
+  portofolioPhoneLightProjects,
+  portofolioPhoneDarkProjects,
+  portofolioPhoneLightDetails,
+  portofolioPhoneDarkDetails,
+  portofolioPhoneLightContactMePage,
+  portofolioPhoneDarkContactMePage,
+];
+
+const protafolioWeb = [
+  portofolioDarkMainPage,
+  portofolioLightMainPage,
+  portofolioLightAboutMePage,
+  portofolioDarkAboutMePage,
+  portofolioLightProjects,
+  portofolioDarkProjects,
+  portofolioLightDetails,
+  portofolioDarkDetails,
+  protofolioLightContactMePage,
+  protofolioDarkContactMePage,
+];
 
 export {
+  ecommerceWeb,
+  protafolioPhone,
+  protafolioWeb,
   portofolioDarkMainPage,
-  ecommerceproducts,
   socialMediaPosts,
   laptopfontview1,
   calculator,

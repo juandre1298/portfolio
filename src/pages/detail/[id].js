@@ -76,27 +76,14 @@ export default function Index() {
 
                   {projects[group][name].imgLink.length ? (
                     <>
-                      {
-                        currentSlide === 0 ? (
-                          <Image
-                            src={projects[group][name].imgLink[currentSlide]}
-                            alt="screen"
-                            width="0"
-                            height="0"
-                            sizes="100vw"
-                            className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
-                          />
-                        ) : (
-                          <img
-                            src={projects[group][name].imgLink[
-                              currentSlide
-                            ].substring(10)}
-                            alt="screen"
-                            className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
-                          />
-                        )
-                        /* {console.log(currentSlide)} */
-                      }
+                      <Image
+                        src={projects[group][name].imgLink[currentSlide]}
+                        alt="screen"
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
+                      />
                     </>
                   ) : (
                     <Image
