@@ -52,7 +52,7 @@ export const About = (toastTheme) => {
               </Link>
             </button>
             <a
-              href="/tecCVJuanASalas.pdf"
+              href="/CV_JuanAndresSalas.pdf"
               download="CV_JuanAndresSalas"
               onClick={() => {
                 toast.success("Resume downloaded", {

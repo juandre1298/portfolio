@@ -92,7 +92,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
           </li>
           <li>
             <a
-              href="/public/CV_JuanAndresSalas.pdf"
+              href="/CV_JuanAndresSalas.pdf"
               download="CV_JuanAndresSalas"
               onClick={() => {
                 toast.success("Resume downloaded", {
