@@ -19,8 +19,8 @@ import {
 } from "/public/images.js";
 
 const reactProjects = {
-  AwesomeEcommer: {
-    title: "awesome e-commerce",
+  AwesomeEcommerce: {
+    title: "Awesome E-commerce ",
     url: "https://awesome-shop-app.web.app",
     imgLink: [
       ecommerceproducts,
@@ -221,7 +221,7 @@ export const aboutMe = {
     "\tAs someone who is passionate about contributing, learning, and growing, I am excited about the opportunity to join a team where I can make a meaningful impact. I believe that my skills in mechanical engineering, leadership, teamwork, and artistic creativity make me a valuable asset as a junior front-end developer. I am open to connecting on LinkedIn for further review of my skills and experience.\n I am eager to discuss how I can add value to your organization and contribute to your team's success. Please do not hesitate to contact me to further discuss my qualifications.",
   skills: [
     "React",
-    "Javascript",
+    "JavaScript",
     "Next.js",
     "HTML",
     "CSS",
@@ -230,9 +230,9 @@ export const aboutMe = {
     "Fire-Base",
     "TailWind",
     "Redux",
-    "Email js",
+    "Email JS",
     "Dynamic Routing",
-    "GIT",
-    "GITHUB",
+    "Git",
+    "GitHub",
   ],
 };

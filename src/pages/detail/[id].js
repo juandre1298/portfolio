@@ -49,8 +49,8 @@ export default function Index() {
   };
 
   return (
-    <section className="min-h-screen  dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black sm:pt-[90px] pt-[78px]">
-      <div className="p-4 md:p-10 md:text-2xl absolute">
+    <section className="min-h-screen  dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-800 dark:via-gray-900 dark:to-black sm:pt-[90px] pt-[90px]">
+      <div className="p-4  md:p-10 text-2xl absolute">
         <Link href={"/"} className="rounded-full bg-gray-500">
           <IoMdArrowRoundBack />
         </Link>
@@ -58,10 +58,9 @@ export default function Index() {
       {loading ? (
         <h1>loading...</h1>
       ) : (
-        <div className="flex flex-col gap-16 xl:gap-4">
-          <div className="text-center text-3xl xl:text-5xl gap-4 py-8 capitalize font-bold">
-            <h1 className="">{group}</h1>
-            <h1 className="">{name}</h1>
+        <div className="flex flex-col py-12 gap-16 xl:gap-4">
+          <div className="text-center text-3xl xl:text-5xl gap-4 py-12 capitalize font-bold">
+            <h1 className="">{projects[group][name].title}</h1>
           </div>
 
           <div className="flex flex-col gap-16 md:flex-row mx-4 xl:mx-32">
@@ -77,15 +76,27 @@ export default function Index() {
 
                   {projects[group][name].imgLink.length ? (
                     <>
-                      {/* {console.log(currentSlide)} */}
-                      <Image
-                        src={projects[group][name].imgLink[currentSlide]}
-                        alt="screen"
-                        width="0"
-                        height="0"
-                        sizes="100vw"
-                        className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
-                      />
+                      {
+                        currentSlide === 0 ? (
+                          <Image
+                            src={projects[group][name].imgLink[currentSlide]}
+                            alt="screen"
+                            width="0"
+                            height="0"
+                            sizes="100vw"
+                            className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
+                          />
+                        ) : (
+                          <img
+                            src={projects[group][name].imgLink[
+                              currentSlide
+                            ].substring(10)}
+                            alt="screen"
+                            className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] absolute scale-down w-[91%] mx-auto top-[6%]"
+                          />
+                        )
+                        /* {console.log(currentSlide)} */
+                      }
                     </>
                   ) : (
                     <Image
@@ -120,23 +131,23 @@ export default function Index() {
                 )}
               </div>
               {/* buttons */}
-              <div className="flex gap-4 md:absolute bottom-[16%] left-[5%]">
-                <button
+              <div className="flex gap-4 mt-4 md:mt-0 justify-center md:absolute bottom-[15%] lg:bottom-[15.5%] left-[5%]">
+                {/*       <button
                   onClick={() => setExpand(!expand)}
-                  className="p-4 border-[1px] border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
+                  className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10 border-[1px] bg-yellow-400 dark:bg-teal-600 md:bg-transparent dark:md:bg-transparent border-none md:border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
                 >
                   <BiExpand />
-                </button>
-                <div className="flex gap-4">
+                </button> */}
+                <div className="flex h-full gap-4">
                   <div
                     onClick={prevSlide}
-                    className="p-4 border-[1px] border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
+                    className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10 border-[1px] md:border-solid bg-yellow-400 dark:bg-teal-600 md:bg-transparent dark:md:bg-transparent border-none md:border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
                   >
                     <HiArrowLeft />
                   </div>
                   <div
                     onClick={nextSlide}
-                    className="p-4 border-[1px] border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
+                    className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10 border-[1px] md:border-solid bg-yellow-400 dark:bg-teal-600 md:bg-transparent dark:md:bg-transparent border-none md:border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
                   >
                     <HiArrowRight />
                   </div>
@@ -165,7 +176,7 @@ export default function Index() {
               </div>
               <div className="flex flex-col md:flex-row gap-8">
                 <a
-                  className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
+                  className=" py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg bg-yellow-400 dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
                   href={projects[group][name].url}
                 >
                   Project Link
