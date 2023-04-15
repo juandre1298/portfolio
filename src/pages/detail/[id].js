@@ -104,10 +104,12 @@ export default function Index() {
                         ].substring(10)}
                       />
                     ) : (
-                      <img
-                        className="absolute rounded-xl bottom-[0.95%]  shadow-2xl h-[48%] right-[4.95%] group-hover:right-[6%] group-hover:bottom-[1.9%] group-hover:h-[96%] duration-1000"
-                        src={projects[group][name].phone.substring(10)}
-                      />
+                      <>
+                        <img
+                          className="absolute rounded-xl bottom-[0.95%]  shadow-2xl h-[48%] right-[4.95%] group-hover:right-[6%] group-hover:bottom-[1.9%] group-hover:h-[96%] duration-1000"
+                          src={projects[group][name].phone.substring(10)}
+                        />
+                      </>
                     )}
                     <img
                       src="/laptop-computer-with-white-screen-keyboard/phone_14_01.png"
@@ -125,20 +127,22 @@ export default function Index() {
                 >
                   <BiExpand />
                 </button> */}
-                <div className="flex h-full gap-4">
-                  <div
-                    onClick={prevSlide}
-                    className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10 border-[1px] md:border-solid bg-yellow-400 dark:bg-teal-600 md:bg-transparent dark:md:bg-transparent border-none md:border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
-                  >
-                    <HiArrowLeft />
+                {projects[group][name].imgLink.length && (
+                  <div className="flex h-full gap-4">
+                    <div
+                      onClick={prevSlide}
+                      className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10 border-[1px] md:border-solid bg-yellow-400 dark:bg-teal-600 md:bg-transparent dark:md:bg-transparent border-none md:border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
+                    >
+                      <HiArrowLeft />
+                    </div>
+                    <div
+                      onClick={nextSlide}
+                      className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10 border-[1px] md:border-solid bg-yellow-400 dark:bg-teal-600 md:bg-transparent dark:md:bg-transparent border-none md:border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
+                    >
+                      <HiArrowRight />
+                    </div>
                   </div>
-                  <div
-                    onClick={nextSlide}
-                    className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10 border-[1px] md:border-solid bg-yellow-400 dark:bg-teal-600 md:bg-transparent dark:md:bg-transparent border-none md:border-gray-700 rounded-full text-gray-700  hover:cursor-pointer hover:bg-gray-700 hover:text-white active:bg-gray-900 duration-300  flex items-center justify-center "
-                  >
-                    <HiArrowRight />
-                  </div>
-                </div>
+                )}
               </div>
             </div>
 

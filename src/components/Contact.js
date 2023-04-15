@@ -53,8 +53,8 @@ export const Contact = (toastTheme) => {
       <div className="w-10 h-[3px] md:h-[5px] rounded-full bg-yellow-400 dark:bg-teal-600 mx-auto my-2 shadow-yellow-400 dark:shadow-teal-800 "></div>
       <div>
         <p className="mx-4 text-center">
-          Feel free to Contact me by submitting the form below and I will get
-          back to you as soon as possible
+          Feel free to contact me by submitting the form below, and I will get
+          back to you as soon as possible.
         </p>
         <form
           ref={form}

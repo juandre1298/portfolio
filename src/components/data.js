@@ -2,11 +2,11 @@ import {
   ecommerceWeb,
   protafolioPhone,
   protafolioWeb,
-  portofolioDarkMainPage,
+  portfolioDarkMainPage,
   ecommerceproducts,
   socialMediaPosts,
   laptopfontview1,
-  calculator,
+  calculatorImg,
   youtubeClone,
   countdownapp,
   googleClone,
@@ -15,7 +15,7 @@ import {
   tictactoeGame,
   todoListApp,
   pairgame,
-  basicPokedex1,
+  basicPokedex,
   pokedexPro,
 } from "/public/images.js";
 
@@ -24,35 +24,49 @@ const reactProjects = {
     title: "Awesome E-commerce ",
     url: "https://awesome-shop-app.web.app",
     imgLink: ecommerceWeb,
-
     description:
       "I have successfully built a fully functional e-commerce website using React, TailwindCSS, and Firebase. This project showcases my solid understanding of front-end development and back-end integration, as well as my ability to create web applications from scratch and deploy them live. As a junior developer, this experience has been invaluable in enhancing my skills in component-based development, state management, and utilizing modern tools and technologies. It demonstrates my commitment to staying updated with the latest trends in the tech industry and my ability to confidently build real-world projects. I am excited to continue my career journey, utilizing these skills and experiences to contribute to future projects and further grow as a developer.",
     technologies: [
-      " react",
-      "TailWind",
+      "React",
+      "Tailwind",
       "react-toastify",
       "Dynamic Routing",
-      "redux-tookits",
-      "redux-persist ",
+      "redux-toolkit",
+      "redux-persist",
       "GIT",
       "GITHUB",
     ],
   },
-  basicPokedex: {
-    title: "Basic pokedex",
-    url: "https://basicpokedex.web.app/",
-    imgLink: [basicPokedex1, "/../public/projectImg/basicPokedex2.png"],
-    gh: "https://github.com/juandre1298/pokedex-v1",
-    phone: "/../public/projectImg/basicPokedexPhone.png",
+
+  incredibleportfolio: {
+    title: "Incredible Portfolio",
+    url: "https://portfolio-juandretech.vercel.app/",
+    imgLink: protafolioWeb,
+    phone: [
+      "/../public/projectImg/portfolioPhoneDarkMainPage.png",
+      "/../public/projectImg/portfolioPhoneLightMainPage.png",
+      "/../public/projectImg/portfolioPhoneLightAboutMePage.png",
+      "/../public/projectImg/portfolioPhoneDarkAboutMePage.png",
+      "/../public/projectImg/portfolioPhoneLightProjects.png",
+      "/../public/projectImg/portfolioPhoneDarkProjects.png",
+      "/../public/projectImg/portfolioPhoneLightDetails.png",
+      "/../public/projectImg/portfolioPhoneDarkDetails.png",
+      "/../public/projectImg/portfolioPhoneLightContactMePage.png",
+      "/../public/projectImg/portfolioPhoneDarkContactMePage.png",
+    ],
     description:
-      "As a junior front-end developer, I found building a Pokedex using PokeAPI and React to be an excellent opportunity. It provided practical application of my skills, opportunities to learn, room for creativity, and a showcase for my portfolio. I applied my front-end development skills to a real-world project, deepened my understanding of React concepts, showcased my creativity through UI design, and demonstrated my abilities to potential employers. This project allowed me to gain practical experience and enhanced my employability in the competitive tech industry.",
+      "I am pleased to share that I have successfully managed to develop and train my skills as a junior software engineer while creating an intuitive UI and responsive portfolio webpage using Next.js, React.js, TailwindCSS, Email.js, and other technologies. Throughout the project, I gained valuable hands-on experience in front-end development, UI/UX design, JavaScript, state management, API integration, deployment, problem-solving, and collaboration. This accomplishment has equipped me with a diverse range of skills, showcasing my ability to create professional-quality webpages using modern web technologies.",
     technologies: [
+      "Next.js",
+      "Tailwind",
       "React",
-      "Redux",
-      "API axious",
-      "CSS",
-      "JSX",
-      "react-router-dom",
+      "Responsive Design",
+      "react-toastify",
+      "EmailJS",
+      "Dynamic Routing",
+      "React Collapsible",
+      "Git",
+      "GitHub",
     ],
   },
   socialMedia: {
@@ -75,45 +89,41 @@ const reactProjects = {
       "react-router-dom",
     ],
   },
+  basicPokedex: {
+    title: "Basic pokedex",
+    url: "https://basicpokedex.web.app/",
+    imgLink: basicPokedex,
+    gh: "https://github.com/juandre1298/pokedex-v1",
+    phone: [
+      "/../public/projectImg/basicPokedexPhone.png",
+      "/../public/projectImg/basicPokedexPhone.png",
+    ],
+    description:
+      "As a junior front-end developer, I found building a Pokedex using PokeAPI and React to be an excellent opportunity. It provided practical application of my skills, opportunities to learn, room for creativity, and a showcase for my portfolio. I applied my front-end development skills to a real-world project, deepened my understanding of React concepts, showcased my creativity through UI design, and demonstrated my abilities to potential employers. This project allowed me to gain practical experience and enhanced my employability in the competitive tech industry.",
+    technologies: [
+      "React",
+      "Redux",
+      "API axious",
+      "CSS",
+      "JSX",
+      "react-router-dom",
+    ],
+  },
+
   pokedexPro: {
     title: "pokedex",
     url: "https://pokedexpro-faece.web.app/",
     imgLink: pokedexPro,
-    phone: "/projectImg/phone-calculator.png",
-    description:
-      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
-    technologies: ["HTML", "CSS", "JavaScript"],
-  },
 
-  incrediblePortofolio: {
-    title: "incredible portofolio",
-    url: "https://portofolio-juandretech.vercel.app/",
-    imgLink: protafolioWeb,
-    phone: [
-      "/../public/projectImg/portofolioPhoneDarkMainPage.png",
-      "/../public/projectImg/portofolioPhoneLightMainPage.png",
-      "/../public/projectImg/portofolioPhoneLightAboutMePage.png",
-      "/../public/projectImg/portofolioPhoneDarkAboutMePage.png",
-      "/../public/projectImg/portofolioPhoneLightProjects.png",
-      "/../public/projectImg/portofolioPhoneDarkProjects.png",
-      "/../public/projectImg/portofolioPhoneLightDetails.png",
-      "/../public/projectImg/portofolioPhoneDarkDetails.png",
-      "/../public/projectImg/portofolioPhoneLightContactMePage.png",
-      "/../public/projectImg/portofolioPhoneDarkContactMePage.png",
-    ],
     description:
-      "I am pleased to share that I have successfully managed to develop and train my skills as a junior software engineer while creating an intuitive UI and responsive portfolio webpage using Next.js, React.js, TailwindCSS, Email.js, and other technologies. Throughout the project, I gained valuable hands-on experience in front-end development, UI/UX design, JavaScript, state management, API integration, deployment, problem-solving, and collaboration. This accomplishment has equipped me with a diverse range of skills, showcasing my ability to create professional-quality webpages using modern web technologies.",
+      "As a junior front-end developer, I found building a Pokedex using PokeAPI and React to be an excellent opportunity. It provided practical application of my skills, opportunities to learn, room for creativity, and a showcase for my portfolio. I applied my front-end development skills to a real-world project, deepened my understanding of React concepts, showcased my creativity through UI design, and demonstrated my abilities to potential employers. This project allowed me to gain practical experience and enhanced my employability in the competitive tech industry.",
     technologies: [
-      "Next.js",
-      "TailWind",
-      "Responsive Design",
-      "react",
-      "react-toastify",
-      "Email js",
-      "Dynamic Routing",
-      "React Collaps",
-      "GIT",
-      "GITHUB",
+      "React",
+      "Redux",
+      "API axious",
+      "CSS",
+      "JSX",
+      "react-router-dom",
     ],
   },
 };
@@ -123,7 +133,7 @@ const htmlProjects = {
     url: "https://juandre1298.github.io/youtubeClone/",
     imgLink: youtubeClone,
     description:
-      "This is a clone of a previous version of youtube homepage, in this project I single handle manage to replicate the style and structure of youtube.com webpage. Making it responsive and using several animation features. Please check it out and tell me what you think about it!",
+      "This is a clone of a previous version of the YouTube homepage. In this project, I skillfully managed to replicate the style and structure of youtube.com webpage, making it responsive and incorporating various animation features. Please check it out and let me know what you think about it!",
     technologies: ["HTML", "CSS"],
   },
   googleclone: {
@@ -131,7 +141,7 @@ const htmlProjects = {
     url: "https://juandre1298.github.io/GoogleClone/",
     imgLink: googleClone,
     description:
-      "This is a clone of google homepage, in this project I single handle manage to replicate the style and structure of youtube.com webpage. Making it responsive and using several animation features. Please check it out and tell me what you think about it!",
+      "This is a clone of the Google homepage. In this project, I single-handedly managed to replicate the style and structure of the youtube.com webpage, making it responsive and incorporating several animation features. Please check it out and let me know what you think about it!",
     technologies: ["HTML", "CSS"],
   },
 };
@@ -140,10 +150,10 @@ const JSProjects = {
   calculator: {
     title: "Awesome Calculator",
     url: "https://juandre1298.github.io/calculator/",
-    imgLink: calculator,
-    phone: "/../public/projectImg/phone-calculator.png",
+    imgLink: calculatorImg,
+    phone: ["/../public/projectImg/phone-calculator.png"],
     description:
-      "In this project I use Vanilla JS to create a simple and intuitive but effective calculator with an elegant style and cool 3d animation buttons. Please check it out and tell me what you think about it!",
+      "In this project, I used Vanilla JS to create a simple and intuitive, yet effective calculator with an elegant style and cool 3D animation buttons. Please check it out and let me know what you think about it!",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   countDown: {
@@ -151,7 +161,7 @@ const JSProjects = {
     url: "https://juandre1298.github.io/CountDown/",
     imgLink: countdownapp,
     description:
-      "This is an app for those people that can't wait for the special dates! with this app you will be able to check exactly how many time is left to any holly day or important date!",
+      "This is an app for those people who can't wait for special dates! With this app, you will be able to check exactly how much time is left until any holiday or important date!",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   hangmangame: {
@@ -159,7 +169,7 @@ const JSProjects = {
     url: "https://juandre1298.github.io/JSHangmanGame/",
     imgLink: hangManGame,
     description:
-      "I create this tribute to the game that is part of the childhood of all of us. I use JavaScript to program the logict that could take or not the life of our little budy! Please enter and save his life and you will see some cool animation as the poor guy appears",
+      "I created this tribute to the game that is a part of the childhood of all of us. I used JavaScript to program the logic that could take or not take the life of our little buddy! Please enter and save his life, and you will see some cool animations as the poor guy appears.",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   quizapp: {
@@ -167,7 +177,7 @@ const JSProjects = {
     url: "https://juandre1298.github.io/JSQuizApp/",
     imgLink: QuizApp,
     description:
-      "This is a game that has always save us in those borring school days! So how not incluid ti!? As you case you can interact with the size of the table and it can real-time check hows the winner!",
+      "I successfully created a simple yet effective quiz app using my skills in HTML, CSS, and JavaScript. Showing knowlegde in designing an attractive UI, implementing logic, and leveraging DOM manipulation and UX/UI design principles, I was able to create a functional and user-friendly quiz app.",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   todolist: {
@@ -175,15 +185,15 @@ const JSProjects = {
     url: "https://juandre1298.github.io/JSTodoList/",
     imgLink: todoListApp,
     description:
-      "This is a usefull tool that we all need if we want to be productive, With this page you can organize all your tasks so that you can bring out your most productive side.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "This is a useful tool that we all need if we want to be productive. With this page, you can organize all your tasks so that you can bring out your most productive side.",
+    technologies: ["HTML", "JavaScript"],
   },
   pairgame: {
     title: "Pair Game",
     url: "https://juandre1298.github.io/JSTodoList/",
     imgLink: pairgame,
     description:
-      "This is a usefull tool that we all need if we want to be productive, With this page you can organize all your tasks so that you can bring out your most productive side.",
+      "I designed a captivating and visually appealing JavaScript pairs game with dynamic animations that bring the game to life. Players can enjoy smooth card flipping animations, engaging transition effects, and visually appealing feedback animations that enhance the overall user experience. The combination of interactive gameplay and eye-catching animations adds a touch of excitement and polish to the game, showcasing my skills in creating immersive and visually appealing web applications",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
 };
@@ -202,15 +212,18 @@ export const aboutMe = {
   moreAboutMe:
     "\tAs someone who is passionate about contributing, learning, and growing, I am excited about the opportunity to join a team where I can make a meaningful impact. I believe that my skills in mechanical engineering, leadership, teamwork, and artistic creativity make me a valuable asset as a junior front-end developer. I am open to connecting on LinkedIn for further review of my skills and experience.\n I am eager to discuss how I can add value to your organization and contribute to your team's success. Please do not hesitate to contact me to further discuss my qualifications.",
   skills: [
-    "React",
-    "JavaScript",
+    "React JS",
     "Next.js",
+    "JavaScript",
+    "TypeScript",
     "HTML",
     "CSS",
     "Responsive Design",
     "react-toastify",
-    "Fire-Base",
-    "TailWind",
+    "redux-toolkit",
+    "react-router-dom",
+    "Firebase",
+    "Tailwind",
     "Redux",
     "Email JS",
     "Dynamic Routing",

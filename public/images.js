@@ -1,6 +1,9 @@
 import laptopfontview1 from "/public/laptop-computer-with-white-screen-keyboard/laptopfontview1.png";
 import basicPokedex1 from "/public/projectImg/basicPokedex1.png";
+import basicPokedex2 from "/public/projectImg/basicPokedex2.png";
+const basicPokedex = [basicPokedex1, basicPokedex2];
 import calculator from "/public/projectImg/calculator.png";
+let calculatorImg = calculator;
 import youtubeClone from "/public/projectImg/youtubeClone.png";
 import countdownapp from "/public/projectImg/countdownapp.png";
 import googleClone from "/public/projectImg/googleClone.png";
@@ -12,6 +15,7 @@ import socialMediaPosts from "/public/projectImg/socialMediaAppPosts.png";
 import pairgame from "/public/projectImg/pairgame.png";
 import pokedexPro from "/public/projectImg/pokedexPro.png";
 import portofolioDarkMainPage from "/public/projectImg/portofolioDarkMainPage.png";
+
 // import images of ecommerce webpages
 import ecommerceLogIn from "public/projectImg/ecommerceLogIn.png";
 import ecommerceLogin2 from "public/projectImg/ecommerceLogin2.png";
@@ -83,7 +87,7 @@ export {
   portofolioDarkMainPage,
   socialMediaPosts,
   laptopfontview1,
-  calculator,
+  calculatorImg,
   youtubeClone,
   countdownapp,
   googleClone,
@@ -92,6 +96,6 @@ export {
   tictactoeGame,
   todoListApp,
   pairgame,
-  basicPokedex1,
+  basicPokedex,
   pokedexPro,
 };
