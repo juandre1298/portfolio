@@ -106,7 +106,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
                   theme: darkMode ? "dark" : "light",
                 });
               }}
-              className="bg-yellow-400 py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
+              className="text-sm md:text-xl  bg-yellow-400 py-1 md:uppercase md:py-2 px-2 md:px-8  rounded-md  shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
             >
               <span>Resume</span>
               <BsFillFileEarmarkPdfFill />
