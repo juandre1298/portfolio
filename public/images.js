@@ -11,7 +11,18 @@ import hangManGame from "/public/projectImg/hangManGame.png";
 import QuizApp from "/public/projectImg/QuizApp.png";
 import tictactoeGame from "/public/projectImg/tictactoeGame.png";
 import todoListApp from "/public/projectImg/todoListApp.png";
+
+//social media
 import socialMediaPosts from "/public/projectImg/socialMediaAppPosts.png";
+import socialMediaAppGoogleLogin from "/public/projectImg/socialMediaAppGoogleLogin.png";
+import socialMediaAppPost from "/public/projectImg/socialMediaAppPost.png";
+
+const socialMedia = [
+  socialMediaPosts,
+  socialMediaAppGoogleLogin,
+  socialMediaAppPost,
+];
+
 import pairgame from "/public/projectImg/pairgame.png";
 import pokedexPro from "/public/projectImg/pokedexPro.png";
 import portofolioDarkMainPage from "/public/projectImg/portofolioDarkMainPage.png";
@@ -85,7 +96,7 @@ export {
   protafolioPhone,
   protafolioWeb,
   portofolioDarkMainPage,
-  socialMediaPosts,
+  socialMedia,
   laptopfontview1,
   calculatorImg,
   youtubeClone,

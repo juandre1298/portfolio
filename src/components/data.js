@@ -4,7 +4,7 @@ import {
   protafolioWeb,
   portfolioDarkMainPage,
   ecommerceproducts,
-  socialMediaPosts,
+  socialMedia,
   laptopfontview1,
   calculatorImg,
   youtubeClone,
@@ -24,6 +24,7 @@ const reactProjects = {
     title: "Awesome E-commerce ",
     url: "https://awesome-shop-app.web.app",
     imgLink: ecommerceWeb,
+    gh: "https://github.com/juandre1298/e-commerce/tree/main/e-commerce",
     description:
       "I have successfully built a fully functional e-commerce website using React, TailwindCSS, and Firebase. This project showcases my solid understanding of front-end development and back-end integration, as well as my ability to create web applications from scratch and deploy them live. As a junior developer, this experience has been invaluable in enhancing my skills in component-based development, state management, and utilizing modern tools and technologies. It demonstrates my commitment to staying updated with the latest trends in the tech industry and my ability to confidently build real-world projects. I am excited to continue my career journey, utilizing these skills and experiences to contribute to future projects and further grow as a developer.",
     technologies: [
@@ -54,6 +55,7 @@ const reactProjects = {
       "/../public/projectImg/portfolioPhoneLightContactMePage.png",
       "/../public/projectImg/portfolioPhoneDarkContactMePage.png",
     ],
+    gh: "https://github.com/juandre1298/portfolio",
     description:
       "I am pleased to share that I have successfully managed to develop and train my skills as a junior software engineer while creating an intuitive UI and responsive portfolio webpage using Next.js, React.js, TailwindCSS, Email.js, and other technologies. Throughout the project, I gained valuable hands-on experience in front-end development, UI/UX design, JavaScript, state management, API integration, deployment, problem-solving, and collaboration. This accomplishment has equipped me with a diverse range of skills, showcasing my ability to create professional-quality webpages using modern web technologies.",
     technologies: [
@@ -72,13 +74,8 @@ const reactProjects = {
   socialMedia: {
     title: "social media app",
     url: "https://react-course-69a26.firebaseapp.com/",
-    imgLink: [
-      socialMediaPosts,
-
-      "/../public/projectImg/socialMediaAppGoogleLogin.png",
-      "/../public/projectImg/socialMediaAppPost.png",
-    ],
-
+    imgLink: socialMedia,
+    gh: "https://github.com/juandre1298/CodeJourney/tree/main/react-code/module18-deploying-a-firebase-react-app",
     description:
       "I have successfully developed and deployed a TypeScript React app using Firebase for user authentication and deployment. With the use of technologies such as Redux, API management, and react-router-dom, I have gained valuable experience as a junior front-end developer. The incorporation of TypeScript and Firebase has contributed to a secure application, demonstrating my growing proficiency in front-end development. I am proud of this accomplishment and excited to continue learning and improving my skills in the dynamic tech industry.",
     technologies: [
@@ -114,7 +111,7 @@ const reactProjects = {
     title: "pokedex",
     url: "https://pokedexpro-faece.web.app/",
     imgLink: pokedexPro,
-
+    gh: "https://github.com/juandre1298/pokedex/tree/main/pokedex-pro",
     description:
       "As a junior front-end developer, I found building a Pokedex using PokeAPI and React to be an excellent opportunity. It provided practical application of my skills, opportunities to learn, room for creativity, and a showcase for my portfolio. I applied my front-end development skills to a real-world project, deepened my understanding of React concepts, showcased my creativity through UI design, and demonstrated my abilities to potential employers. This project allowed me to gain practical experience and enhanced my employability in the competitive tech industry.",
     technologies: [
@@ -132,6 +129,7 @@ const htmlProjects = {
     title: "Youtube Clone",
     url: "https://juandre1298.github.io/youtubeClone/",
     imgLink: youtubeClone,
+    gh: "https://github.com/juandre1298/youtubeClone",
     description:
       "This is a clone of a previous version of the YouTube homepage. In this project, I skillfully managed to replicate the style and structure of youtube.com webpage, making it responsive and incorporating various animation features. Please check it out and let me know what you think about it!",
     technologies: ["HTML", "CSS"],
@@ -140,6 +138,7 @@ const htmlProjects = {
     title: "Google Clone",
     url: "https://juandre1298.github.io/GoogleClone/",
     imgLink: googleClone,
+    gh: "https://github.com/juandre1298/GoogleClone",
     description:
       "This is a clone of the Google homepage. In this project, I single-handedly managed to replicate the style and structure of the youtube.com webpage, making it responsive and incorporating several animation features. Please check it out and let me know what you think about it!",
     technologies: ["HTML", "CSS"],
@@ -160,6 +159,7 @@ const JSProjects = {
     title: "CountDown",
     url: "https://juandre1298.github.io/CountDown/",
     imgLink: countdownapp,
+    gh: "https://github.com/juandre1298/calculator",
     description:
       "This is an app for those people who can't wait for special dates! With this app, you will be able to check exactly how much time is left until any holiday or important date!",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -168,6 +168,7 @@ const JSProjects = {
     title: "Hang Man Game",
     url: "https://juandre1298.github.io/JSHangmanGame/",
     imgLink: hangManGame,
+    gh: "https://github.com/juandre1298/JSHangmanGame",
     description:
       "I created this tribute to the game that is a part of the childhood of all of us. I used JavaScript to program the logic that could take or not take the life of our little buddy! Please enter and save his life, and you will see some cool animations as the poor guy appears.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -176,6 +177,7 @@ const JSProjects = {
     title: "Quiz App",
     url: "https://juandre1298.github.io/JSQuizApp/",
     imgLink: QuizApp,
+    gh: "https://github.com/juandre1298/JSQuizApp",
     description:
       "I successfully created a simple yet effective quiz app using my skills in HTML, CSS, and JavaScript. Showing knowlegde in designing an attractive UI, implementing logic, and leveraging DOM manipulation and UX/UI design principles, I was able to create a functional and user-friendly quiz app.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -184,6 +186,7 @@ const JSProjects = {
     title: "To do List",
     url: "https://juandre1298.github.io/JSTodoList/",
     imgLink: todoListApp,
+    gh: "https://github.com/juandre1298/JSTodoList",
     description:
       "This is a useful tool that we all need if we want to be productive. With this page, you can organize all your tasks so that you can bring out your most productive side.",
     technologies: ["HTML", "JavaScript"],
@@ -192,6 +195,7 @@ const JSProjects = {
     title: "Pair Game",
     url: "https://juandre1298.github.io/JSTodoList/",
     imgLink: pairgame,
+    gh: "https://github.com/juandre1298/pair-game",
     description:
       "I designed a captivating and visually appealing JavaScript pairs game with dynamic animations that bring the game to life. Players can enjoy smooth card flipping animations, engaging transition effects, and visually appealing feedback animations that enhance the overall user experience. The combination of interactive gameplay and eye-catching animations adds a touch of excitement and polish to the game, showcasing my skills in creating immersive and visually appealing web applications",
     technologies: ["HTML", "CSS", "JavaScript"],
