@@ -8,8 +8,8 @@ import {
 
 export const Otherpages = () => {
   return (
-    <section>
-      <div className="bg-gray-400 text-white dark:bg-slate-950 py-3 md:px-3 md:rounded-r-lg  md:absolute md:left-0 md:top-[40%] z-0">
+    <section className="">
+      <div className="bg-gray-400/80 text-white dark:bg-slate-950/80 py-3 md:px-3 md:rounded-r-lg  md:absolute md:left-0 md:top-[40%] z-0">
         <ul className="flex justify-around md:flex-col md:gap-3 text-6xl md:text-2xl lg:text-4xl ">
           <li className=" hover:text-orange-300 dark:hover:text-teal-600 decoration-[1px] cursor-pointer duration-200 ">
             <a href="https://github.com/juandre1298" className="group">
