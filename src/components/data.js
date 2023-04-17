@@ -208,9 +208,9 @@ export const projects = {
   html: htmlProjects,
 };
 export const aboutMe = {
-  greeting: "Hi!\nI'm Juan Andres Salas!",
+  greeting: "Hey,\nI'm Juan Andres Salas.",
   presentation:
-    "I'm passionate front-end developer with a keen eye for detail and a love for creating visually appealing and user-friendly websites and I'm ready to contribute with my passion and hard work! ",
+    "I'm a Front-End developer and Mechanical Engineer with a keen eye for detail and a love for creating visually appealing and user-friendly websites and I'm ready to contribute with my passion and hard work.",
   aboutMe:
     "\tAs a Jr. front-end developer with a background in mechanical engineering and experience in product ownership and project management within technology companies, I bring a unique blend of technical expertise, artistic flair, leadership skills, and teamwork abilities to the tech industry. Proficient in front-end technologies such as HTML, CSS, JavaScript, and React, I have created several projects that showcase my abilities.\n With a deep understanding of product development processes from my mechanical engineering background, I am well-equipped to manage projects, collaborate with cross-functional teams, and achieve results. My artistic mindset and attention to detail make me well-suited for front-end development, where I strive to create visually appealing and user-friendly websites.",
   moreAboutMe:
