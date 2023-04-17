@@ -77,7 +77,7 @@ const reactProjects = {
     imgLink: socialMedia,
     gh: "https://github.com/juandre1298/CodeJourney/tree/main/react-code/module18-deploying-a-firebase-react-app",
     description:
-      "I have successfully developed and deployed a TypeScript React app using Firebase for user authentication and deployment. With the use of technologies such as Redux, API management, and react-router-dom, I have gained valuable experience as a junior front-end developer. The incorporation of TypeScript and Firebase has contributed to a secure application, demonstrating my growing proficiency in front-end development. I am proud of this accomplishment and excited to continue learning and improving my skills in the dynamic tech industry.",
+      "I have successfully developed and deployed a TypeScript React app using Firebase for user authentication and deployment. With the use of technologies such as Redux, API management, and react-router-dom, I have gained valuable experience as a junior front-end developer. This is a simple example of the great things we can do with Firebase. Here, you can create posts that can inspire all the Trendscreamers out there, and you can like or dislike opinions thanks to the Firebase database.",
     technologies: [
       "typescript",
       "React Js",
@@ -86,29 +86,9 @@ const reactProjects = {
       "react-router-dom",
     ],
   },
-  basicPokedex: {
-    title: "Basic pokedex",
-    url: "https://basicpokedex.web.app/",
-    imgLink: basicPokedex,
-    gh: "https://github.com/juandre1298/pokedex-v1",
-    phone: [
-      "/../public/projectImg/basicPokedexPhone.png",
-      "/../public/projectImg/basicPokedexPhone.png",
-    ],
-    description:
-      "As a junior front-end developer, I found building a Pokedex using PokeAPI and React to be an excellent opportunity. It provided practical application of my skills, opportunities to learn, room for creativity, and a showcase for my portfolio. I applied my front-end development skills to a real-world project, deepened my understanding of React concepts, showcased my creativity through UI design, and demonstrated my abilities to potential employers. This project allowed me to gain practical experience and enhanced my employability in the competitive tech industry.",
-    technologies: [
-      "React",
-      "Redux",
-      "API axious",
-      "CSS",
-      "JSX",
-      "react-router-dom",
-    ],
-  },
 
   pokedexPro: {
-    title: "pokedex",
+    title: "Simple pokedex",
     url: "https://pokedexpro-faece.web.app/",
     imgLink: pokedexPro,
     gh: "https://github.com/juandre1298/pokedex/tree/main/pokedex-pro",
@@ -123,6 +103,26 @@ const reactProjects = {
       "react-router-dom",
     ],
   },
+  /*   basicPokedex: {
+    title: "preview of a more complex pokedex",
+    url: "https://basicpokedex.web.app/",
+    imgLink: basicPokedex,
+    gh: "https://github.com/juandre1298/pokedex-v1",
+    phone: [
+      "/../public/projectImg/basicPokedexPhone.png",
+      "/../public/projectImg/basicPokedexPhone.png",
+    ],
+    description:
+      "This pokedex will not use pagination as the desplay feature, but it will integrate a lazy loading .",
+    technologies: [
+      "React",
+      "Redux",
+      "API axious",
+      "CSS",
+      "JSX",
+      "react-router-dom",
+    ],
+  }, */
 };
 const htmlProjects = {
   youtubeclone: {

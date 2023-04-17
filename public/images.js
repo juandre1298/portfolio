@@ -13,14 +13,18 @@ import tictactoeGame from "/public/projectImg/tictactoeGame.png";
 import todoListApp from "/public/projectImg/todoListApp.png";
 
 //social media
-import socialMediaPosts from "/public/projectImg/socialMediaAppPosts.png";
-import socialMediaAppGoogleLogin from "/public/projectImg/socialMediaAppGoogleLogin.png";
-import socialMediaAppPost from "/public/projectImg/socialMediaAppPost.png";
+import socialMediaCreatingPost from "/public/projectImg/socialMediaCreatingPost.png";
+import socialMediaLogin2 from "/public/projectImg/socialMediaLogin2.png";
+import socialMediaLogin from "/public/projectImg/socialMediaLogin.png";
+import socialMediaLogOut from "/public/projectImg/socialMediaLogOut.png";
+import socialMediaHome from "/public/projectImg/socialMediaHome.png";
 
 const socialMedia = [
-  socialMediaPosts,
-  socialMediaAppGoogleLogin,
-  socialMediaAppPost,
+  socialMediaHome,
+  socialMediaLogOut,
+  socialMediaLogin,
+  socialMediaLogin2,
+  socialMediaCreatingPost,
 ];
 
 import pairgame from "/public/projectImg/pairgame.png";
