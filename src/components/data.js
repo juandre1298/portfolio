@@ -57,7 +57,7 @@ const reactProjects = {
     ],
     gh: "https://github.com/juandre1298/portfolio",
     description:
-      "I am pleased to share that I have successfully managed to develop and train my skills as a junior software engineer while creating an intuitive UI and responsive portfolio webpage using Next.js, React.js, TailwindCSS, Email.js, and other technologies. Throughout the project, I gained valuable hands-on experience in front-end development, UI/UX design, JavaScript, state management, API integration, deployment, problem-solving, and collaboration. This accomplishment has equipped me with a diverse range of skills, showcasing my ability to create professional-quality webpages using modern web technologies.",
+      "I have worked on this portfolio project that showcases my expertise in front-end development. Using my artistic vision and skills in Next.js, Tailwind, React, and responsive design, I created a visually stunning website that functions seamlessly across all devices. To enhance the user experience, I implemented third-party libraries such as React-toastify and React Collapsible, and used EmailJS for seamless communication with website users. Additionally, I used Git and GitHub for version control and collaboration, and created dynamic routes and pages that are personalized to the user's needs. This portfolio project is a testament to my skills as a front-end developer and my ability to create high-quality, user-friendly websites.",
     technologies: [
       "Next.js",
       "Tailwind",
