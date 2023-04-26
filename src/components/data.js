@@ -146,6 +146,15 @@ const htmlProjects = {
 };
 
 const JSProjects = {
+  pairgame: {
+    title: "Pair Game",
+    url: "https://juandre1298.github.io/pair-game/",
+    imgLink: pairgame,
+    gh: "https://github.com/juandre1298/pair-game",
+    description:
+      "I designed a captivating and visually appealing JavaScript pairs game with dynamic animations that bring the game to life. Players can enjoy smooth card flipping animations, engaging transition effects, and visually appealing feedback animations that enhance the overall user experience. The combination of interactive gameplay and eye-catching animations adds a touch of excitement and polish to the game, showcasing my skills in creating immersive and visually appealing web applications",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
   calculator: {
     title: "Awesome Calculator",
     url: "https://juandre1298.github.io/calculator/",
@@ -155,15 +164,7 @@ const JSProjects = {
       "In this project, I used Vanilla JS to create a simple and intuitive, yet effective calculator with an elegant style and cool 3D animation buttons. Please check it out and let me know what you think about it!",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
-  countDown: {
-    title: "CountDown",
-    url: "https://juandre1298.github.io/CountDown/",
-    imgLink: countdownapp,
-    gh: "https://github.com/juandre1298/calculator",
-    description:
-      "This is an app for those people who can't wait for special dates! With this app, you will be able to check exactly how much time is left until any holiday or important date!",
-    technologies: ["HTML", "CSS", "JavaScript"],
-  },
+
   hangmangame: {
     title: "Hang Man Game",
     url: "https://juandre1298.github.io/JSHangmanGame/",
@@ -171,6 +172,15 @@ const JSProjects = {
     gh: "https://github.com/juandre1298/JSHangmanGame",
     description:
       "I created this tribute to the game that is a part of the childhood of all of us. I used JavaScript to program the logic that could take or not take the life of our little buddy! Please enter and save his life, and you will see some cool animations as the poor guy appears.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  countDown: {
+    title: "CountDown",
+    url: "https://juandre1298.github.io/CountDown/",
+    imgLink: countdownapp,
+    gh: "https://github.com/juandre1298/calculator",
+    description:
+      "This is an app for those people who can't wait for special dates! With this app, you will be able to check exactly how much time is left until any holiday or important date!",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   quizapp: {
@@ -190,15 +200,6 @@ const JSProjects = {
     description:
       "This is a useful tool that we all need if we want to be productive. With this page, you can organize all your tasks so that you can bring out your most productive side.",
     technologies: ["HTML", "JavaScript"],
-  },
-  pairgame: {
-    title: "Pair Game",
-    url: "https://juandre1298.github.io/JSTodoList/",
-    imgLink: pairgame,
-    gh: "https://github.com/juandre1298/pair-game",
-    description:
-      "I designed a captivating and visually appealing JavaScript pairs game with dynamic animations that bring the game to life. Players can enjoy smooth card flipping animations, engaging transition effects, and visually appealing feedback animations that enhance the overall user experience. The combination of interactive gameplay and eye-catching animations adds a touch of excitement and polish to the game, showcasing my skills in creating immersive and visually appealing web applications",
-    technologies: ["HTML", "CSS", "JavaScript"],
   },
 };
 
