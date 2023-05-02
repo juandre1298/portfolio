@@ -69,7 +69,7 @@ export default function Index() {
                 {/* screen */}
                 <div className="  flex justify-center ">
                   <img
-                    src="/laptop-computer-with-white-screen-keyboard/desktop.png"
+                    src="/laptop-computer-with-white-screen-keyboard/desktop.webp"
                     alt="phone"
                     className="object-contain drop-shadow-[0_2px_5px_rgba(0,0,0,1)] "
                   />
@@ -112,7 +112,7 @@ export default function Index() {
                       </>
                     )}
                     <img
-                      src="/laptop-computer-with-white-screen-keyboard/phone_14_01.png"
+                      src="/laptop-computer-with-white-screen-keyboard/phone_14_01.webp"
                       alt="phone"
                       className=" absolute bottom-0  shadow-2xl h-[50%] right-[3.9%]  group-hover:h-[100%] duration-1000"
                     />

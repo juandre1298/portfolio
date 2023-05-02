@@ -1,23 +1,23 @@
-import laptopfontview1 from "/public/laptop-computer-with-white-screen-keyboard/laptopfontview1.png";
-import basicPokedex1 from "/public/projectImg/basicPokedex1.png";
-import basicPokedex2 from "/public/projectImg/basicPokedex2.png";
+import laptopfontview1 from "/public/laptop-computer-with-white-screen-keyboard/laptopfontview1.webp";
+import basicPokedex1 from "/public/projectImg/basicPokedex1.webp";
+import basicPokedex2 from "/public/projectImg/basicPokedex2.webp";
 const basicPokedex = [basicPokedex1, basicPokedex2];
-import calculator from "/public/projectImg/calculator.png";
+import calculator from "/public/projectImg/calculator.webp";
 let calculatorImg = calculator;
-import youtubeClone from "/public/projectImg/youtubeClone.png";
-import countdownapp from "/public/projectImg/countdownapp.png";
-import googleClone from "/public/projectImg/googleClone.png";
-import hangManGame from "/public/projectImg/hangManGame.png";
-import QuizApp from "/public/projectImg/QuizApp.png";
-import tictactoeGame from "/public/projectImg/tictactoeGame.png";
-import todoListApp from "/public/projectImg/todoListApp.png";
+import youtubeClone from "/public/projectImg/youtubeClone.webp";
+import countdownapp from "/public/projectImg/countdownapp.webp";
+import googleClone from "/public/projectImg/googleClone.webp";
+import hangManGame from "/public/projectImg/hangManGame.webp";
+import QuizApp from "/public/projectImg/QuizApp.webp";
+import tictactoeGame from "/public/projectImg/tictactoeGame.webp";
+import todoListApp from "/public/projectImg/todoListApp.webp";
 
 //social media
-import socialMediaCreatingPost from "/public/projectImg/socialMediaCreatingPost.png";
-import socialMediaLogin2 from "/public/projectImg/socialMediaLogin2.png";
-import socialMediaLogin from "/public/projectImg/socialMediaLogin.png";
-import socialMediaLogOut from "/public/projectImg/socialMediaLogOut.png";
-import socialMediaHome from "/public/projectImg/socialMediaHome.png";
+import socialMediaCreatingPost from "/public/projectImg/socialMediaCreatingPost.webp";
+import socialMediaLogin2 from "/public/projectImg/socialMediaLogin2.webp";
+import socialMediaLogin from "/public/projectImg/socialMediaLogin.webp";
+import socialMediaLogOut from "/public/projectImg/socialMediaLogOut.webp";
+import socialMediaHome from "/public/projectImg/socialMediaHome.webp";
 
 const socialMedia = [
   socialMediaHome,
@@ -27,17 +27,17 @@ const socialMedia = [
   socialMediaCreatingPost,
 ];
 
-import pairgame from "/public/projectImg/pairgame.png";
-import pokedexPro from "/public/projectImg/pokedexPro.png";
-import portofolioDarkMainPage from "/public/projectImg/portofolioDarkMainPage.png";
+import pairgame from "/public/projectImg/pairgame.webp";
+import pokedexPro from "/public/projectImg/pokedexPro.webp";
+import portofolioDarkMainPage from "/public/projectImg/portofolioDarkMainPage.webp";
 
 // import images of ecommerce webpages
-import ecommerceLogIn from "public/projectImg/ecommerceLogIn.png";
-import ecommerceLogin2 from "public/projectImg/ecommerceLogin2.png";
-import ecommercecart from "public/projectImg/ecommercecart.png";
-import ecommerceproductdetail from "public/projectImg/ecommerceproductdetail.png";
-import ecommerceproducts from "public/projectImg/ecommerceproducts.png";
-import ecommercemainpage from "public/projectImg/ecommercemainpage.png";
+import ecommerceLogIn from "public/projectImg/ecommerceLogIn.webp";
+import ecommerceLogin2 from "public/projectImg/ecommerceLogin2.webp";
+import ecommercecart from "public/projectImg/ecommercecart.webp";
+import ecommerceproductdetail from "public/projectImg/ecommerceproductdetail.webp";
+import ecommerceproducts from "public/projectImg/ecommerceproducts.webp";
+import ecommercemainpage from "public/projectImg/ecommercemainpage.webp";
 
 const ecommerceWeb = [
   ecommerceproducts,
@@ -49,25 +49,25 @@ const ecommerceWeb = [
 ];
 
 // import protafolio images
-import portofolioLightMainPage from "/public/projectImg/portofolioLightMainPage.png";
-import portofolioLightAboutMePage from "/public/projectImg/portofolioLightAboutMePage.png";
-import portofolioDarkAboutMePage from "/public/projectImg/portofolioDarkAboutMePage.png";
-import portofolioLightProjects from "/public/projectImg/portofolioLightProjects.png";
-import portofolioDarkProjects from "/public/projectImg/portofolioDarkProjects.png";
-import portofolioLightDetails from "/public/projectImg/portofolioLightDetails.png";
-import portofolioDarkDetails from "/public/projectImg/portofolioDarkDetails.png";
-import protofolioLightContactMePage from "/public/projectImg/protofolioLightContactMePage.png";
-import protofolioDarkContactMePage from "/public/projectImg/protofolioDarkContactMePage.png";
-import portofolioPhoneDarkMainPage from "/public/projectImg/portofolioPhoneDarkMainPage.png";
-import portofolioPhoneLightMainPage from "/public/projectImg/portofolioPhoneLightMainPage.png";
-import portofolioPhoneLightAboutMePage from "/public/projectImg/portofolioPhoneLightAboutMePage.png";
-import portofolioPhoneDarkAboutMePage from "/public/projectImg/portofolioPhoneDarkAboutMePage.png";
-import portofolioPhoneLightProjects from "/public/projectImg/portofolioPhoneLightProjects.png";
-import portofolioPhoneDarkProjects from "/public/projectImg/portofolioPhoneDarkProjects.png";
-import portofolioPhoneLightDetails from "/public/projectImg/portofolioPhoneLightDetails.png";
-import portofolioPhoneDarkDetails from "/public/projectImg/portofolioPhoneDarkDetails.png";
-import portofolioPhoneLightContactMePage from "/public/projectImg/portofolioPhoneLightContactMePage.png";
-import portofolioPhoneDarkContactMePage from "/public/projectImg/portofolioPhoneDarkContactMePage.png";
+import portofolioLightMainPage from "/public/projectImg/portofolioLightMainPage.webp";
+import portofolioLightAboutMePage from "/public/projectImg/portofolioLightAboutMePage.webp";
+import portofolioDarkAboutMePage from "/public/projectImg/portofolioDarkAboutMePage.webp";
+import portofolioLightProjects from "/public/projectImg/portofolioLightProjects.webp";
+import portofolioDarkProjects from "/public/projectImg/portofolioDarkProjects.webp";
+import portofolioLightDetails from "/public/projectImg/portofolioLightDetails.webp";
+import portofolioDarkDetails from "/public/projectImg/portofolioDarkDetails.webp";
+import protofolioLightContactMePage from "/public/projectImg/protofolioLightContactMePage.webp";
+import protofolioDarkContactMePage from "/public/projectImg/protofolioDarkContactMePage.webp";
+import portofolioPhoneDarkMainPage from "/public/projectImg/portofolioPhoneDarkMainPage.webp";
+import portofolioPhoneLightMainPage from "/public/projectImg/portofolioPhoneLightMainPage.webp";
+import portofolioPhoneLightAboutMePage from "/public/projectImg/portofolioPhoneLightAboutMePage.webp";
+import portofolioPhoneDarkAboutMePage from "/public/projectImg/portofolioPhoneDarkAboutMePage.webp";
+import portofolioPhoneLightProjects from "/public/projectImg/portofolioPhoneLightProjects.webp";
+import portofolioPhoneDarkProjects from "/public/projectImg/portofolioPhoneDarkProjects.webp";
+import portofolioPhoneLightDetails from "/public/projectImg/portofolioPhoneLightDetails.webp";
+import portofolioPhoneDarkDetails from "/public/projectImg/portofolioPhoneDarkDetails.webp";
+import portofolioPhoneLightContactMePage from "/public/projectImg/portofolioPhoneLightContactMePage.webp";
+import portofolioPhoneDarkContactMePage from "/public/projectImg/portofolioPhoneDarkContactMePage.webp";
 
 const protafolioPhone = [
   portofolioPhoneDarkMainPage,
@@ -95,7 +95,7 @@ const protafolioWeb = [
   protofolioDarkContactMePage,
 ];
 // import education
-import certificationFreeCodeCampResponsiveWebDesign from "/public/Education/certificationFreeCodeCampResponsiveWebDesign.png";
+import certificationFreeCodeCampResponsiveWebDesign from "/public/Education/certificationFreeCodeCampResponsiveWebDesign.webp";
 
 export {
   ecommerceWeb,
