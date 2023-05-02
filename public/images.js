@@ -94,6 +94,8 @@ const protafolioWeb = [
   protofolioLightContactMePage,
   protofolioDarkContactMePage,
 ];
+// import education
+import certificationFreeCodeCampResponsiveWebDesign from "/public/Education/certificationFreeCodeCampResponsiveWebDesign.png";
 
 export {
   ecommerceWeb,
@@ -113,4 +115,5 @@ export {
   pairgame,
   basicPokedex,
   pokedexPro,
+  certificationFreeCodeCampResponsiveWebDesign,
 };

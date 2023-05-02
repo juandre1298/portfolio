@@ -74,6 +74,21 @@ export const Header = ({ setDarkMode, darkMode }) => {
               </LinkScroll>
             </button>
           </li>
+          {/*          <li className="text-sm md:text-xl md:font-bold hover:text-orange-700 dark:hover:text-teal-600 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
+            <button>
+              <LinkScroll
+                activeClass="active"
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={500}
+                
+              >
+                Education
+              </LinkScroll>
+            </button>
+          </li> */}
 
           <li className="text-sm md:text-xl md:font-bold hover:text-orange-700 dark:hover:text-teal-600 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
             <button>

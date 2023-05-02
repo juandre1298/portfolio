@@ -17,6 +17,7 @@ import {
   pairgame,
   basicPokedex,
   pokedexPro,
+  certificationFreeCodeCampResponsiveWebDesign,
 } from "/public/images.js";
 
 const reactProjects = {
@@ -236,3 +237,14 @@ export const aboutMe = {
     "GitHub",
   ],
 };
+export const certifications = [
+  {
+    title: "Responsive Web Design",
+    url: "https://freecodecamp.org/certification/juandre1298/responsive-web-design",
+    imgLink: certificationFreeCodeCampResponsiveWebDesign,
+    IssuedDate: "April 29, 2023",
+    description:
+      "Developer Certification, representing approximately 300 hours of coursework.",
+    technologies: ["HTML", "CSS"],
+  },
+];

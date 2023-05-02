@@ -6,12 +6,14 @@ import { Otherpages } from "../components/Otherpages";
 import { Contact } from "@/components/Contact";
 import { Greeting } from "@/components/Greeting";
 import { About } from "@/components/About";
+import { Education } from "../components/Education";
 import { Inter } from "next/font/google";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { useState, useEffect } from "react";
 import { projects } from "../components/data";
+import { certifications } from "../components/data";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +40,7 @@ export default function Home(darkMode) {
           <Greeting />
           <About darkMode={toastTheme} />
           <ProjectsDisplay projects={projects} />
+          {/* <Education certifications={certifications} /> */}
           <Contact darkMode={toastTheme} />
           <Otherpages />
         </div>
