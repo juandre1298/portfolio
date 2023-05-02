@@ -17,6 +17,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
           </p>
         </Link>
         <button
+          name="darkmode"
           onClick={() => {
             setDarkMode(!darkMode);
           }}

@@ -116,7 +116,7 @@ export const Contact = (toastTheme) => {
             />
           ) : (
             <button
-              className="bg-yellow-400 py-3 px-8 mx-auto rounded-md font-bold uppercase shadow-lg cursor-not-allowed dark:bg-teal-600 z-10 opacity-80 dark:opacity-50"
+              className="bg-yellow-400 py-3 px-8 mx-auto rounded-md font-bold uppercase shadow-lg cursor-not-allowed dark:bg-teal-700 z-10 opacity-80 dark:opacity-50"
               onClick={() => {
                 toast.error("Please fill all the requiered inputs", {
                   position: "top-left",
