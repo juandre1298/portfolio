@@ -136,7 +136,6 @@ export default function Index() {
                     <img
                       alt="phone screen"
                       src="/laptop-computer-with-white-screen-keyboard/phone_14_01.webp"
-                      alt="phone"
                       className=" absolute bottom-0  shadow-2xl h-[50%] right-[3.9%]  group-hover:h-[100%] duration-1000"
                     />
                   </div>
