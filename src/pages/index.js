@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import { ProjectsDisplay } from "../components/ProjectsDisplay";
+import { ProfessionalExperience } from "../components/ProfessionalExperience";
 
 import { Otherpages } from "../components/Otherpages";
 import { Contact } from "@/components/Contact";
@@ -39,6 +40,7 @@ export default function Home(darkMode) {
 
           <Greeting />
           <About darkMode={toastTheme} />
+          <ProfessionalExperience />
           <ProjectsDisplay projects={projects} />
           {/* <Education certifications={certifications} /> */}
           <Contact darkMode={toastTheme} />

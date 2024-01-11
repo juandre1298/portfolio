@@ -18,6 +18,11 @@ import {
   basicPokedex,
   pokedexPro,
   certificationFreeCodeCampResponsiveWebDesign,
+  aimedge_logo,
+  bavaria_logo,
+  DST_logo,
+  technoglass_logo,
+  webmid_logo,
 } from "/public/images.js";
 
 const reactProjects = {
@@ -239,6 +244,69 @@ export const aboutMe = {
     ],
   },
 };
+export const professionalExperience = [
+  {
+    title: "Full Stack Software Developer",
+    companyName: "Aim Edge Apps",
+    startDate: "01-06-2023",
+    finishDate: "current",
+    jobDescription: `<ul>
+    <li>Contributed to building a cutting-edge web platform for transcription orders, addressing both client-side and internal back office needs.</li>
+    <li>Managed client relationships, incorporating feedback for optimal results.</li>
+    <li>Demonstrated front-end mastery with React.js and Material UI, ensuring visually striking interfaces.</li>
+    <li>Showcased back-end expertise using Node.js and MySQL for seamless data management.</li>
+    <li>Integrated Square for secure payments and leveraged AWS (S3) for scalable file management.</li>
+    <li>Optimized audio capabilities with Otter and AWS transcription service, ffmpeg, ensuring high-quality outputs.</li>
+    <li>Streamlined workflows with Zapier, enhancing operational efficiency.</li>
+    <li>Implemented Tiny Tech for an intuitive text input editor.</li>
+    <li>Orchestrated end-to-end development, delivering a robust platform tailored to transcription needs for high usage.</li>
+  </ul>`,
+    companyLogo: aimedge_logo,
+    companyLink: "https://aimedgeapps.com/",
+    technologies: [
+      "Zapier",
+      "JavaScript",
+      "JIRA",
+      "Bitbucket",
+      "Redux.js",
+      "Material-UI",
+      "Node.js",
+      "MySQL",
+      "Amazon S3",
+      "Amazon Web Services (AWS)",
+      "Git",
+      "React.js",
+    ],
+    location: "Remote",
+  },
+  {
+    title: "Frontend Developer",
+    companyName: "Webmid",
+    startDate: "01-06-2022",
+    finishDate: "01-06-2023",
+    jobDescription: `<ul>
+    <li>Developed visually appealing and responsive user interfaces using <strong>React.js</strong> and <strong>React Mobile</strong>.</li>
+    <li>Implemented functionalities with <strong>JavaScript</strong>, enhancing user experiences.</li>
+    <li>Utilized <strong>WordPress</strong> for efficient content management.</li>
+    <li>Improved code quality with <strong>TypeScript</strong>.</li>
+    <li>Optimized performance through code refactoring.</li>
+    <li>Collaborated cross-functionally to translate design concepts into web applications.</li>
+    <li>Enhanced workflows and version control using <strong>Git</strong>.</li>
+  </ul>
+  `,
+    companyLogo: webmid_logo,
+    companyLink: "https://web-mid.com/",
+    technologies: [
+      "Javascript",
+      "WordPress",
+      "Redux.js",
+      "Tailwind CSS",
+      "Material-UI",
+      "React.js",
+    ],
+    location: "Remote",
+  },
+];
 export const certifications = [
   {
     title: "Responsive Web Design",

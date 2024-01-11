@@ -96,6 +96,12 @@ const protafolioWeb = [
 ];
 // import education
 import certificationFreeCodeCampResponsiveWebDesign from "/public/Education/certificationFreeCodeCampResponsiveWebDesign.webp";
+// import Experience
+import aimedge_logo from "/public/companyLogos/aimedge_logo.jpeg";
+import bavaria_logo from "/public/companyLogos/bavaria_logo.jpeg";
+import DST_logo from "/public/companyLogos/DST_logo.jpeg";
+import technoglass_logo from "/public/companyLogos/technoglass_logo.jpeg";
+import webmid_logo from "/public/companyLogos/webmid_logo.jpeg";
 
 export {
   ecommerceWeb,
@@ -116,4 +122,9 @@ export {
   basicPokedex,
   pokedexPro,
   certificationFreeCodeCampResponsiveWebDesign,
+  aimedge_logo,
+  bavaria_logo,
+  DST_logo,
+  technoglass_logo,
+  webmid_logo,
 };
