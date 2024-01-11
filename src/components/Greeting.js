@@ -7,13 +7,9 @@ export const Greeting = () => {
   const [greetingDisp, setGreetingDisp] = useState("|");
   const [presentationText, setPresentationText] = useState("|");
 
-  let greetingMessage = "Hi!\nI'm Juan Andres Salas!";
-  let presentationText0 =
-    "I'm a FrondEnd Web developer & Mechanical Engineer ready to contribute with my passion and hard work!";
-
   useEffect(() => {
     autoTypeWriter(aboutMe.greeting, setGreetingDisp, true, 100);
-    autoTypeWriter(aboutMe.presentation, setPresentationText, true, 80);
+    autoTypeWriter(aboutMe.presentation, setPresentationText, true, 50);
   }, []);
 
   return (
