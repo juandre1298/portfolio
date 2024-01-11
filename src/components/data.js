@@ -217,25 +217,27 @@ export const aboutMe = {
     "\tI am a dynamic FullStack software developer and solution-oriented engineer with a passion for creating impactful solutions. Leveraging my background in mechanical engineering, I bring a holistic approach to software development. Proficient in both frontend and backend technologies such as React.js, Node.js, MySQL, and WordPress, I thrive in crafting innovative solutions that bridge the gap between user experience and technical functionality. With a keen eye for detail and a track record of successful project delivery, I am eager to contribute my diverse skill set to drive excellence in every project and engineer meaningful solutions.",
   moreAboutMe:
     "\tAs someone who is passionate about contributing, learning, and growing, I am excited about the opportunity to join a team where I can make a meaningful impact. I believe that my skills in mechanical engineering, leadership, teamwork, and artistic creativity make me a valuable asset as a junior front-end developer. I am open to connecting on LinkedIn for further review of my skills and experience.\n I am eager to discuss how I can add value to your organization and contribute to your team's success. Please do not hesitate to contact me to further discuss my qualifications.",
-  skills: [
-    "React JS",
-    "Next.js",
-    "JavaScript",
-    "TypeScript",
-    "HTML",
-    "CSS",
-    "Responsive Design",
-    "react-toastify",
-    "redux-toolkit",
-    "react-router-dom",
-    "Firebase",
-    "Tailwind",
-    "Redux",
-    "Email JS",
-    "Dynamic Routing",
-    "Git",
-    "GitHub",
-  ],
+  skills: {
+    frontendTech: [
+      "React JS",
+      "Next.JS",
+      "JavaScript",
+      "Redux",
+      "TypeScript",
+      "Tailwind",
+      "MUI (Material-UI)",
+    ],
+    backendTech: ["NodeJS", "Express", "AWS S3", "SQL", "Python", "ffmpeg"],
+    otherTech: [
+      "Git",
+      "GitHub",
+      "Jira",
+      "Bitbucket",
+      "Zapier",
+      "Otter",
+      "Tiny Tech",
+    ],
+  },
 };
 export const certifications = [
   {

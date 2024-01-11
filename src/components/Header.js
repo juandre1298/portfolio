@@ -9,7 +9,7 @@ import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 
 export const Header = ({ setDarkMode, darkMode }) => {
   return (
-    <section className="flex flex-col top-0 md:flex-row md:justify-between w-full py-2 md:py-6 px-4 border-b-2 fixed bg-white dark:bg-slate-950  shadow-lg dark:shadow-teal-800 z-40">
+    <section className="flex flex-col top-0 md:flex-row md:justify-between w-full py-2 md:py-3 px-4 border-b-2 fixed bg-white dark:bg-slate-950  shadow-lg dark:shadow-teal-800 z-40">
       <div className=" flex justify-between items-center">
         <Link href="/">
           <p className="font-burtons mr-4 md:text-xl">

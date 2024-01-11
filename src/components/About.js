@@ -11,14 +11,14 @@ export const About = (toastTheme) => {
   return (
     <section
       id="about"
-      className="z-10 flex flex-col md:justify-center gap-4 md:h-screen md:gap-8 md:px-8 object-fit "
+      className="z-10 flex flex-col md:justify-center gap-4 md:gap-8 md:px-8 object-fit min-h-[calc(100vh-84px)]"
     >
       <h1 className="text-center md:text-left text-3xl lg:text-5xl font-bold uppercase mx-auto">
         About me
       </h1>
       <div className="w-10 h-[3px] md:h-[5px] rounded-full bg-yellow-400 dark:bg-teal-600 mx-auto  shadow-yellow-400 dark:shadow-teal-800"></div>
       <div className="md:flex md:justify-evenly ">
-        <div className="md:w-1/2 px-4 md:px-8 text-justify md:text-xl 2xl:text-2xl">
+        <div className="md:w-1/2 px-4 md:px-8 text-justify md:text-lg 2xl:text-2xl">
           <div className=" whitespace-pre-wrap ">{aboutMe.aboutMe}</div>
           <div
           /*   className={
@@ -73,15 +73,41 @@ export const About = (toastTheme) => {
             </a>
           </div>
         </div>
-        <div className="md:w-1/2 flex flex-col 2xl:justify-center lg:gap-8">
-          <h2 className="text-center text-xl font-bold py-4 lg:text-5xl">
-            My Skills
+        <div className="md:w-1/2 flex flex-col 2xl:justify-center lg:gap-2">
+          <h2 className="text-center text-xl font-bold py-1 lg:text-3xl">
+            Frontend
           </h2>
-          <ul className="flex flex-wrap gap-4 mx-16 justify-center py-4">
-            {aboutMe.skills.map((e) => (
+          <ul className="flex flex-wrap gap-4 mx-16 justify-center py-1">
+            {aboutMe.skills.frontendTech.map((e) => (
               <div
                 key={e}
                 className="px-2 py-2 bg-stone-200 text-stone-800 rounded-md"
+              >
+                {e}
+              </div>
+            ))}
+          </ul>
+          <h2 className="text-center text-xl font-bold py-1 lg:text-3xl">
+            Backend
+          </h2>
+          <ul className="flex flex-wrap gap-4 mx-16 justify-center py-1">
+            {aboutMe.skills.backendTech.map((e) => (
+              <div
+                key={e}
+                className="px-2 py-1 bg-stone-200 text-stone-800 rounded-md"
+              >
+                {e}
+              </div>
+            ))}
+          </ul>
+          <h2 className="text-center text-xl font-bold py-1 lg:text-3xl">
+            Others
+          </h2>
+          <ul className="flex flex-wrap gap-4 mx-16 justify-center py-1">
+            {aboutMe.skills.otherTech.map((e) => (
+              <div
+                key={e}
+                className="px-2 py-1 bg-stone-200 text-stone-800 rounded-md"
               >
                 {e}
               </div>
