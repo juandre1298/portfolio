@@ -12,6 +12,29 @@ import QuizApp from "/public/projectImg/QuizApp.webp";
 import tictactoeGame from "/public/projectImg/tictactoeGame.webp";
 import todoListApp from "/public/projectImg/todoListApp.webp";
 
+// EasyBillsMedia
+import EasyBillsHubCreateAccount from "/public/projectImg/EasyBillsHubCreateAccount.webp";
+import EasyBillsHubCreateInvoice from "/public/projectImg/EasyBillsHubCreateInvoice.webp";
+import EasyBillsHubInvoiceManager from "/public/projectImg/EasyBillsHubInvoiceManager.webp";
+import EasyBillsHubLogin from "/public/projectImg/EasyBillsHubLogin.webp";
+import EasyBillsHubProductDetails from "/public/projectImg/EasyBillsHubProductDetails.webp";
+import EasyBillsHubVoucherCreation from "/public/projectImg/EasyBillsHubVoucherCreation.webp";
+import EasyBillsHubVoucherPreview from "/public/projectImg/EasyBillsHubVoucherPreview.webp";
+import EasyBillsHubVoucher from "/public/projectImg/EasyBillsHubVoucher.webp";
+import EasyBillsHubVoucherZoon from "/public/projectImg/EasyBillsHubVoucherZoon.webp";
+
+const easyBillsHubMedia = [
+  EasyBillsHubLogin,
+  EasyBillsHubCreateAccount,
+  EasyBillsHubCreateInvoice,
+  EasyBillsHubInvoiceManager,
+  EasyBillsHubProductDetails,
+  EasyBillsHubVoucherCreation,
+  EasyBillsHubVoucherPreview,
+  EasyBillsHubVoucher,
+  EasyBillsHubVoucherZoon,
+];
+
 //social media
 import socialMediaCreatingPost from "/public/projectImg/socialMediaCreatingPost.webp";
 import socialMediaLogin2 from "/public/projectImg/socialMediaLogin2.webp";
@@ -105,6 +128,7 @@ import webmid_logo from "/public/companyLogos/webmid_logo.jpeg";
 
 export {
   ecommerceWeb,
+  easyBillsHubMedia,
   protafolioPhone,
   protafolioWeb,
   portofolioDarkMainPage,

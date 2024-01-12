@@ -11,6 +11,7 @@ import { Otherpages } from "/src/components/Otherpages";
 import Image from "next/image";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
+import { ToastContainer, toast } from "react-toastify";
 import { BiExpand } from "react-icons/bi";
 
 export default function Index() {
@@ -20,6 +21,13 @@ export default function Index() {
   const [name, setName] = useState("");
   const [loading, setLoading] = useState(true);
   const [expand, setExpand] = useState(false);
+
+  const [darkMode, setDarkMode] = useState(true);
+  const [toastTheme, setToastTheme] = useState("dark");
+
+  useEffect(() => {
+    darkMode ? setToastTheme("dark") : setToastTheme("light");
+  }, [darkMode]);
 
   useEffect(() => {
     if (router.isReady) {
@@ -187,13 +195,35 @@ export default function Index() {
                 </ul>
               </div>
               <div className="flex flex-col md:flex-row gap-8">
-                <a
-                  className=" py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg bg-yellow-400 dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
-                  href={projects[group][name].url}
-                >
-                  Project Link
-                  <AiOutlineLink className="text-2xl" />
-                </a>
+                {projects[group][name].url == "comming soon" ||
+                !projects[group][name].url ? (
+                  <a
+                    className=" py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg bg-yellow-400 dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
+                    onClick={() => {
+                      toast.warning("Coming soon", {
+                        position: "top-left",
+                        autoClose: 3000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: darkMode ? "dark" : "light",
+                      });
+                    }}
+                  >
+                    Project Link
+                    <AiOutlineLink className="text-2xl" />
+                  </a>
+                ) : (
+                  <a
+                    className=" py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg bg-yellow-400 dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
+                    href={projects[group][name].url}
+                  >
+                    Project Link
+                    <AiOutlineLink className="text-2xl" />
+                  </a>
+                )}
                 <a
                   className="bg-yellow-400 py-3 px-3 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
                   href={projects[group][name].gh}
@@ -204,9 +234,29 @@ export default function Index() {
               </div>
             </div>
           </div>
+          {projects[group][name].moreDetails && (
+            <div className="text-justify list-square mx-32 mt-20">
+              <h2 className="text-3xl uppercase font-bold text-center">
+                More Details
+              </h2>
+              <div className="w-10 h-[3px] md:h-[5px] my-8 rounded-full bg-yellow-400 dark:bg-teal-600 mx-auto  shadow-yellow-400 dark:shadow-teal-800"></div>
+
+              <div
+                className="text-justify list-square project_more_details"
+                dangerouslySetInnerHTML={{
+                  __html: projects[group][name].moreDetails,
+                }}
+              />
+            </div>
+          )}
         </div>
       )}
-
+      <ToastContainer
+        toastStyle={{
+          backgroundColor: darkMode ? "black" : "white",
+          color: !darkMode ? "black" : "white",
+        }}
+      />
       <Otherpages />
     </section>
   );

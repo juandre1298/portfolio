@@ -18,6 +18,16 @@
 .fullscreen-enabled .my-component {
   background: red;
 }
-* {
-  border: 1px red dashed;
+.project_more_details {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.project_more_details h3 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.project_more_details li {
+  /* list-style: url("/media/examples/rocket.svg"); */
+  list-style: inside;
 }

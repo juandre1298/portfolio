@@ -1,5 +1,6 @@
 import {
   ecommerceWeb,
+  easyBillsHubMedia,
   protafolioPhone,
   protafolioWeb,
   portfolioDarkMainPage,
@@ -26,6 +27,100 @@ import {
 } from "/public/images.js";
 
 const reactProjects = {
+  EasyBillsHub: {
+    title: "Easy Bills Hub",
+    url: "comming soon",
+    imgLink: easyBillsHubMedia,
+    gh: "https://github.com/juandre1298/e-commerce/tree/main/e-commerce",
+    description:
+      "Welcome to Easy Bills Hub – your all-in-one Invoice Manager. Clients can effortlessly track purchases and bills, while admins manage invoices, apply discounts, and generate image vouchers securely stored in AWS S3. Detailed billing information is accessible in real-time through the user-friendly interface. Experience streamlined invoicing with Easy Bills Hub – the ultimate solution for efficient financial management.",
+    moreDetails: `<h3>1. <strong>AWS S3 Integration (Backend):</strong></h3>
+
+    <ul>
+      <li>Configured AWS S3 integration using provided <strong>Access Key</strong>, <strong>Secret Key</strong>, and <strong>bucket name</strong>.</li>
+      <li>Implemented a secure method for uploading invoice screenshots, utilizing pre-signed URLs for temporary and secure access.</li>
+      <li>Set up IAM roles and configured permissions on the S3 bucket to restrict access to authorized users.</li>
+      <li>Technologies: AWS SDK for Node.js, IAM (Identity and Access Management).</li>
+    </ul>
+    
+    <h3>2. <strong>Security (Backend):</strong></h3>
+    
+    <ul>
+      <li>Implemented password hashing using the <strong>bcrypt algorithm</strong> to secure user passwords.</li>
+      <li>Ensured secure storage of sensitive information, such as API keys and credentials, by utilizing <strong>environment variables</strong>.</li>
+      <li>Technologies: bcrypt, environment variables.</li>
+    </ul>
+    
+    <h3>3. <strong>User Interface (Frontend):</strong></h3>
+    
+    <ul>
+      <li>Designed a responsive and user-friendly interface based on wireframes, utilizing <strong>React components</strong> for UI elements.</li>
+      <li>Implemented <strong>React Router</strong> for intuitive client-side navigation.</li>
+      <li>Tested the interface on various devices and browsers, ensuring compatibility through responsive design principles.</li>
+      <li>Technologies: React JS, JavaScript, React Router.</li>
+    </ul>
+    
+    <h3>4. <strong>Unique Identifiers (Backend):</strong></h3>
+    
+    <ul>
+      <li>Developed logic to generate and assign unique identifiers for clients and products.</li>
+      <li>Implemented validation to ensure the uniqueness of these identifiers during creation, checking for existing identifiers in the database.</li>
+      <li>Technologies: NodeJS, Express, MySQL.</li>
+    </ul>
+    
+    <h3>5. <strong>Discount Values Validation (Backend):</strong></h3>
+    
+    <ul>
+      <li>Implemented logic to calculate and validate discount values based on customer history.</li>
+      <li>Set limits on discount values according to specified conditions, ensuring adherence to defined ranges.</li>
+      <li>Technologies: NodeJS, Express, MySQL.</li>
+    </ul>
+    
+    <h3>Additional Considerations:</h3>
+    
+    <ul>
+      <li>Implemented comprehensive error handling throughout the application to provide meaningful feedback to users.</li>
+      <li>Regularly updated and patched dependencies to address potential security vulnerabilities.</li>
+      <li>Conducted thorough testing, including unit tests, integration tests, and user acceptance tests, using tools like <strong>Jest</strong> for React components and backend logic.</li>
+      <li>Version control using <strong>Git</strong> and hosting the project repository on <strong>GitHub</strong>.</li>
+    </ul>
+    `,
+    techDeatils: `Frontend Technologies:
+
+    React JS: Our frontend is built on the React JS library, providing a dynamic and responsive user interface that ensures a smooth experience for clients and admins alike.
+    JavaScript: The backbone of interactivity on our platform, JavaScript enhances the user experience by enabling real-time updates and dynamic content manipulation.
+    Backend Technologies:
+    
+    NodeJS: Powering the backend, NodeJS ensures high performance and scalability, handling server-side logic for efficient data processing.
+    Express: Leveraging the Express framework, we've created a lightweight and flexible backend to seamlessly handle HTTP requests and responses.
+    State Management:
+    
+    Redux: For state management, Redux plays a crucial role in maintaining a consistent application state, making data retrieval and updates more efficient.
+    Cloud Storage:
+    
+    AWS S3: Your image vouchers are securely stored in the Amazon Simple Storage Service (S3), ensuring reliable and scalable cloud storage for all your billing attachments.
+    Database:
+    
+    MySQL: Our choice of MySQL as the relational database ensures structured and organized data storage, enhancing the reliability and speed of information retrieval.
+    Version Control:
+    
+    Git: Throughout the development process, Git enables version control, allowing for collaborative development, tracking changes, and maintaining code integrity.
+    Collaboration Platform:
+    
+    GitHub: Our project repository is hosted on GitHub, providing a collaborative platform for development, issue tracking, and code review.
+    Easy Bills Hub is not just a financial management platform; it's a testament to the power of technology in simplifying and enhancing your invoicing experience. Our choice of these technologies ensures a secure, scalable, and efficient platform that meets the highest standards of modern web development.`,
+    technologies: [
+      "React JS",
+      "JavaScript",
+      "NodeJS",
+      "Redux",
+      "Express",
+      "AWS s3",
+      "MySQL",
+      "Git",
+      "GitHub",
+    ],
+  },
   AwesomeEcommerce: {
     title: "Awesome E-commerce ",
     url: "https://awesome-shop-app.web.app",
@@ -44,7 +139,6 @@ const reactProjects = {
       "GITHUB",
     ],
   },
-
   incredibleportfolio: {
     title: "Incredible Portfolio",
     url: "https://portfolio-juandretech.vercel.app/",
