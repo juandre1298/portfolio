@@ -307,9 +307,10 @@ const JSProjects = {
 };
 
 export const projects = {
-  reactJs: reactProjects,
-  javascript: JSProjects,
-  html: htmlProjects,
+  fullstack: reactProjects,
+  // reactJs: reactProjects,
+  "vanilla javascript": JSProjects,
+  // html: htmlProjects,
 };
 export const aboutMe = {
   greeting: "Hey,\nI'm Juan Andres Salas.",
