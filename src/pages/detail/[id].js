@@ -261,14 +261,13 @@ export default function Index() {
             </div>
           </div>
           {projects[group][name].moreDetails && (
-            <div className="text-justify list-square mx-32 mt-20">
-              <h2 className="text-3xl uppercase font-bold text-center">
+            <div className="text-justify list-square mx-5 md:mx-32 mt-20">
+              <h2 className="text-2xl md:text-3xl uppercase font-bold text-center">
                 More Details
               </h2>
               <div className="w-10 h-[3px] md:h-[5px] my-8 rounded-full bg-yellow-400 dark:bg-teal-600 mx-auto  shadow-yellow-400 dark:shadow-teal-800"></div>
-
               <div
-                className="text-justify list-square project_more_details"
+                className="text-justify text-lg md:text-xl list-square project_more_details"
                 dangerouslySetInnerHTML={{
                   __html: projects[group][name].moreDetails,
                 }}
