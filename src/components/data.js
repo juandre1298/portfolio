@@ -31,7 +31,10 @@ const reactProjects = {
     title: "Easy Bills Hub",
     url: "comming soon",
     imgLink: easyBillsHubMedia,
-    gh: "https://github.com/juandre1298/e-commerce/tree/main/e-commerce",
+    gh: [
+      "https://github.com/juandre1298/Invoice-Project-REST-API",
+      "https://github.com/juandre1298/Invoice-Project-frontend-application",
+    ],
     description:
       "Welcome to Easy Bills Hub – your all-in-one Invoice Manager. Clients can effortlessly track purchases and bills, while admins manage invoices, apply discounts, and generate image vouchers securely stored in AWS S3. Detailed billing information is accessible in real-time through the user-friendly interface. Experience streamlined invoicing with Easy Bills Hub – the ultimate solution for efficient financial management.",
     moreDetails: `<h3>1. <strong>AWS S3 Integration (Backend):</strong></h3>

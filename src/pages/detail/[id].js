@@ -219,18 +219,44 @@ export default function Index() {
                   <a
                     className=" py-3 px-6 md:px-8  rounded-md font-bold uppercase shadow-lg bg-yellow-400 dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
                     href={projects[group][name].url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Project Link
                     <AiOutlineLink className="text-2xl" />
                   </a>
                 )}
-                <a
-                  className="bg-yellow-400 py-3 px-3 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
-                  href={projects[group][name].gh}
-                >
-                  Code Source
-                  <AiFillGithub className="text-2xl" />
-                </a>
+                {typeof projects[group][name].gh == "object" ? (
+                  <div className="code-container bg-yellow-400 py-3 px-3 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200">
+                    <div className="code-source">
+                      Code Source
+                      <AiFillGithub className="text-2xl" />
+                    </div>
+                    <div className="hidden-codes">
+                      {projects[group][name].gh.map((code, index) => (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          key={index}
+                          className="code-section bg-yellow-400 py-3 px-3 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90"
+                          href={code}
+                        >
+                          {code}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <a
+                    className="bg-yellow-400 py-3 px-3 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
+                    href={projects[group][name].gh}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Code Source
+                    <AiFillGithub className="text-2xl" />
+                  </a>
+                )}
               </div>
             </div>
           </div>
