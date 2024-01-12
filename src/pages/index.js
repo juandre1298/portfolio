@@ -41,7 +41,7 @@ export default function Home(darkMode) {
           <Greeting />
           <About darkMode={toastTheme} />
           <ProfessionalExperience />
-          <ProjectsDisplay projects={projects} />
+          <ProjectsDisplay projects={projects} toastTheme={toastTheme} />
           {/* <Education certifications={certifications} /> */}
           <Contact darkMode={toastTheme} />
           <Otherpages />

@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import Link from "next/link";
 import { Element, animateScroll as scroll } from "react-scroll";
 
-export const ProjectsDisplay = (projects) => {
+export const ProjectsDisplay = (projects, toastTheme) => {
   return (
     <Element name="projects" className="py-8 px-4" id="projects">
       <h1 className="text-5xl uppercase font-bold text-center">projects</h1>
@@ -30,6 +30,7 @@ export const ProjectsDisplay = (projects) => {
                     description={projects.projects[key][e].description}
                     technologies={projects.projects[key][e].technologies}
                     laptopLink={laptopfontview1}
+                    toastTheme={toastTheme}
                   />
                 </div>
               ))}
