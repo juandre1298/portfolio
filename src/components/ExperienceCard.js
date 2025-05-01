@@ -18,24 +18,27 @@ export const ExperienceCard = (props) => {
   //bg-gradient-to-r from-gray-200 to-gray-300 dark:from-cyan-500 dark:to-teal-500  dark:hover:from-teal-500 dark:hover:to-cyan-500
   return (
     <div className="bg-gray-200 rounded-md dark:bg-teal-600/50 gap-4 px-12 py-8 flex flex-col md:flex-row justify-center w-full max-w-[1440px]">
-      <Image
-        src={companyLogo}
-        alt="Company Logo"
-        className=" drop-shadow-[0_4px_5px_rgba(0,0,0,1)] rounded-lg"
-        style={{
-          width: "150px",
-          height: "150px",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      />
+      <a className="cursor-pointer inline contents" target="_blank" href={companyLink} >
+        <Image
+          src={companyLogo}
+          alt="Company Logo"
+          className=" drop-shadow-[0_4px_5px_rgba(0,0,0,1)] rounded-lg"
+          style={{
+            width: "150px",
+            height: "150px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        />
+      </a>
+
       <div className="flex flex-col gap-2 w-full md:px-8">
         <div className="flex gap-5 font-bold">
           <div className="flex flex-col md:justify-between md:flex-row w-full">
             <div>
               <h2 className="capitalize text-center text-xl ">{title}</h2>
               <div>
-                <a target="_blank" href={companyLink} rel="noopener noreferrer">
+                <a className="cursor-pointer underline" target="_blank" href={companyLink} rel="noopener noreferrer">
                   {companyName}
                 </a>
               </div>
