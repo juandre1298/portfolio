@@ -17,7 +17,7 @@ export const ExperienceCard = (props) => {
 
   //bg-gradient-to-r from-gray-200 to-gray-300 dark:from-cyan-500 dark:to-teal-500  dark:hover:from-teal-500 dark:hover:to-cyan-500
   return (
-    <div className="bg-gray-200 rounded-md dark:bg-teal-600/50 gap-4 px-12 py-8 flex flex-col md:flex-row justify-center w-full">
+    <div className="bg-gray-200 rounded-md dark:bg-teal-600/50 gap-4 px-12 py-8 flex flex-col md:flex-row justify-center w-full max-w-[1440px]">
       <Image
         src={companyLogo}
         alt="Company Logo"
@@ -52,7 +52,7 @@ export const ExperienceCard = (props) => {
         <div className="flex justify-center relative mx-4"></div>
         <div className="">
           <div
-            className="text-justify list-square"
+            className="text-justify list-square jobCardDescription"
             dangerouslySetInnerHTML={{ __html: jobDescription }}
           />
           {/* <Link className="underline">more details</Link> */}

@@ -19,6 +19,7 @@ import {
   basicPokedex,
   pokedexPro,
   certificationFreeCodeCampResponsiveWebDesign,
+  guarapo_logo,
   aimedge_logo,
   bavaria_logo,
   DST_logo,
@@ -344,10 +345,43 @@ export const aboutMe = {
 };
 export const professionalExperience = [
   {
+    title: "Frontend Software Developer",
+    companyName: "Guarapo Labs & Redux",
+    startDate: "01-05-2024",
+    finishDate: "current",
+    jobDescription: `<ul>
+    <li>Responsible for building, updating, and maintaining classic and collectible car dealership websites for over 400 clients across the U.S.</li>
+    <li>Develop custom web applications using Ruby on Rails, React, Haml, HTML, SCSS, jQuery, Git, Docker, and Google Tag Manager.</li>
+    <li>Collaborate with Customer Success Managers (CSMs), project managers, and UI/UX teams to gather requirements, incorporate feedback, and implement continuous improvements.</li>
+    <li>Use Figma to create visually appealing, responsive, and user-friendly website interfaces tailored to each client’s branding and needs.</li>
+    <li>Manage both the client-facing platform—allowing users to browse vehicles, explore financing, and complete purchases—and the admin back office for dealership owners to update inventory and site content.</li>
+    <li>Ensure each client receives a fully customized, easy-to-manage website aligned with their specific goals and business requirements.</li>
+    </ul>`,
+    companyLogo: guarapo_logo,
+    companyLink: "https://www.guarapo.dev/",
+    technologies: [
+      "Ruby on Rails",
+      "JavaScript",
+      "React.js",  
+      "JQuary.js",  
+      "Redux.js",
+      "SASS",
+      "Tailwind",
+      "PostgreSQL",
+      "Amazon S3",
+      "Node.js",
+      "Asana",
+      "GitLab",
+      "Amazon Web Services (AWS)",
+      "Git",
+    ],
+    location: "Remote",
+  },
+  {
     title: "Full Stack Software Developer",
     companyName: "Aim Edge Apps",
     startDate: "01-06-2023",
-    finishDate: "current",
+    finishDate: "29-12-2023",
     jobDescription: `<ul>
     <li>Contributed to building a cutting-edge web platform for transcription orders, addressing both client-side and internal back office needs.</li>
     <li>Managed client relationships, incorporating feedback for optimal results.</li>

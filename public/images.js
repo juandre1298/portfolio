@@ -121,6 +121,7 @@ const protafolioWeb = [
 import certificationFreeCodeCampResponsiveWebDesign from "/public/Education/certificationFreeCodeCampResponsiveWebDesign.webp";
 // import Experience
 import aimedge_logo from "/public/companyLogos/aimedge_logo.jpeg";
+import guarapo_logo from "/public/companyLogos/guarapo_logo.svg";
 import bavaria_logo from "/public/companyLogos/bavaria_logo.jpeg";
 import DST_logo from "/public/companyLogos/DST_logo.jpeg";
 import technoglass_logo from "/public/companyLogos/technoglass_logo.jpeg";
@@ -146,6 +147,7 @@ export {
   basicPokedex,
   pokedexPro,
   certificationFreeCodeCampResponsiveWebDesign,
+  guarapo_logo,
   aimedge_logo,
   bavaria_logo,
   DST_logo,
