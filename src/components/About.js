@@ -113,6 +113,19 @@ export const About = (toastTheme) => {
               </div>
             ))}
           </ul>
+          <h2 className="text-center text-xl font-bold py-1 lg:text-3xl">
+            Languages
+          </h2>
+          <ul className="flex flex-wrap gap-4 mx-16 justify-center py-1">
+            {aboutMe.skills.languages.map((e) => (
+              <div
+                key={e}
+                className="px-2 py-1 bg-stone-200 text-stone-800 rounded-md"
+              >
+                {e}
+              </div>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

@@ -385,21 +385,33 @@ export const aboutMe = {
       "React JS",
       "Next.JS",
       "JavaScript",
+      "JQuary.JS",
       "Redux",
       "TypeScript",
       "Tailwind",
+      "SASS",
       "MUI (Material-UI)",
+      "HAML",
+      
     ],
-    backendTech: ["NodeJS", "Express", "AWS S3", "SQL", "Python", "ffmpeg"],
+    backendTech: ["NodeJS", "Ruby on Rails", "Express", "AWS S3", "SQL", "PostgreSQL", "Python", "ffmpeg"],
     otherTech: [
       "Git",
       "GitHub",
+      "Docker/Postman",
       "Jira",
       "Bitbucket",
       "Zapier",
       "Otter",
       "Tiny Tech",
+      "Wordpress",
+      "Shopify"
     ],
+    languages:[
+      "English: Advanced (C1)",
+      "Spanish: Native",
+      "German: Beginner (A2)"
+    ]
   },
 };
 export const professionalExperience = [
