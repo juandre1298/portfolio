@@ -27,7 +27,7 @@ export const ProjectCard = (props) => {
           alt="laptop photo"
           className=" drop-shadow-[0_4px_5px_rgba(0,0,0,1)] "
         />
-        {url == "comming soon" || url ? (
+        {url == "comming soon" || url.length==0 ? (
           <button
             target="_blank"
             rel="noopener noreferrer"

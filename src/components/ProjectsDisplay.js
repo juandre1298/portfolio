@@ -18,7 +18,6 @@ export const ProjectsDisplay = (projects, toastTheme) => {
               {key}
             </h1>
             <div className="grid grid-cols-1 gap-4  md:grid-cols-2 lg:grid-cols-3">
-              {/*  */}
               {Object.keys(projects.projects[key]).map((e, i) => (
                 <div key={projects.projects[key][e].title}>
                   <ProjectCard

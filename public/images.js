@@ -34,6 +34,74 @@ const easyBillsHubMedia = [
   EasyBillsHubVoucher,
   EasyBillsHubVoucherZoon,
 ];
+//https://www.segurabank.com/
+
+
+import segurabank1 from "/public/projectImg/segurabank1.webp";
+import segurabank2 from "/public/projectImg/segurabank2.webp";
+import segurabank3 from "/public/projectImg/segurabank3.webp";
+import segurabank4 from "/public/projectImg/segurabank4.webp";
+import segurabank5 from "/public/projectImg/segurabank5.webp";
+import segurabank7 from "/public/projectImg/segurabank7.webp";
+import segurabank8 from "/public/projectImg/segurabank8.webp";
+import segurabank9 from "/public/projectImg/segurabank9.webp";
+
+const segurabank = [
+  segurabank1,
+  segurabank2,
+  segurabank3,
+  segurabank4,
+  segurabank5,
+  segurabank7,
+  segurabank8,
+  segurabank9,
+];
+
+//https://www.clinicalatrinidad.com/
+
+
+import clinicalatrinidad1 from "/public/projectImg/clinicalatrinidad1.webp";
+import clinicalatrinidad2 from "/public/projectImg/clinicalatrinidad2.webp";
+import clinicalatrinidad3 from "/public/projectImg/clinicalatrinidad3.webp";
+import clinicalatrinidad4 from "/public/projectImg/clinicalatrinidad4.webp";
+import clinicalatrinidad5 from "/public/projectImg/clinicalatrinidad5.webp";
+import clinicalatrinidad7 from "/public/projectImg/clinicalatrinidad7.webp";
+import clinicalatrinidad8 from "/public/projectImg/clinicalatrinidad8.webp";
+import clinicalatrinidad9 from "/public/projectImg/clinicalatrinidad9.webp";
+
+const clinicalatrinidad = [
+  clinicalatrinidad1,
+  clinicalatrinidad2,
+  clinicalatrinidad3,
+  clinicalatrinidad4,
+  clinicalatrinidad5,
+  clinicalatrinidad7,
+  clinicalatrinidad8,
+  clinicalatrinidad9,
+];
+
+//https://www.rkmotors.com/
+
+
+import rkm1 from "/public/projectImg/rkm1.webp";
+import rkm2 from "/public/projectImg/rkm2.webp";
+import rkm3 from "/public/projectImg/rkm3.webp";
+import rkm4 from "/public/projectImg/rkm4.webp";
+import rkm5 from "/public/projectImg/rkm5.webp";
+import rkm7 from "/public/projectImg/rkm7.webp";
+import rkm8 from "/public/projectImg/rkm8.webp";
+import rkm9 from "/public/projectImg/rkm9.webp";
+
+const rkmotors = [
+  rkm1,
+  rkm2,
+  rkm3,
+  rkm4,
+  rkm5,
+  rkm7,
+  rkm8,
+  rkm9,
+];
 
 //social media
 import socialMediaCreatingPost from "/public/projectImg/socialMediaCreatingPost.webp";
@@ -130,6 +198,9 @@ import webmid_logo from "/public/companyLogos/webmid_logo.jpeg";
 export {
   ecommerceWeb,
   easyBillsHubMedia,
+  segurabank,
+  clinicalatrinidad,
+  rkmotors,
   protafolioPhone,
   protafolioWeb,
   portofolioDarkMainPage,

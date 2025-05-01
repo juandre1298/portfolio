@@ -248,7 +248,7 @@ export default function Index() {
                   </div>
                 ) : (
                   <a
-                    className="bg-yellow-400 py-3 px-3 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200"
+                    className={`bg-yellow-400 py-3 px-3 md:px-8  rounded-md font-bold uppercase shadow-lg dark:bg-teal-600 z-10 flex gap-2 justify-center items-center transform hover:scale-110 hover:shadow-3xl active:scale-90  transition-transform duration-200 flex justify-center items-center ${projects[group][name].gh.length == 0 && "hidden"}`}
                     href={projects[group][name].gh}
                     target="_blank"
                     rel="noopener noreferrer"

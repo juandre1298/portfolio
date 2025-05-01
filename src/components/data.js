@@ -3,6 +3,9 @@ import {
   easyBillsHubMedia,
   protafolioPhone,
   protafolioWeb,
+  segurabank,
+  clinicalatrinidad,
+  rkmotors,
   portfolioDarkMainPage,
   ecommerceproducts,
   socialMedia,
@@ -28,6 +31,30 @@ import {
 } from "/public/images.js";
 
 const reactProjects = {
+  rkmotor: {
+    title: "RKMotors",
+    url: "https://www.rkmotors.com/",
+    imgLink: rkmotors,
+    gh: "",
+    description:
+      "RK Motors is a premier classic and performance car dealership offering sales, consignment, financing, detailing, storage, and transport services. The website provides access to their current, incoming, and sold inventory, as well as tools for car searches and consignment submissions.",
+
+    technologies: [
+      "Ruby on Rails",
+      "JavaScript",  
+      "JQuary.js",  
+      "Redux.js",
+      "SASS",
+      "Tailwind",
+      "PostgreSQL",
+      "Amazon S3",
+      "Node.js",
+      "Asana",
+      "GitLab",
+      "Amazon Web Services (AWS)",
+      "Git",
+    ],
+  },
   EasyBillsHub: {
     title: "Easy Bills Hub",
     url: "comming soon",
@@ -306,8 +333,40 @@ const JSProjects = {
     technologies: ["HTML", "JavaScript"],
   },
 };
+const lowcode = {
+  segurabank: {
+    title: "segura Bank",
+    url: "https://www.segurabank.com/",
+    imgLink: segurabank,
+    gh: "",
+    description:
+      "Segura Bank International Corp. is an international financial institution offering personalized solutions for individuals and businesses. The site highlights key services, including checking, savings, commercial accounts, money market accounts, and fixed-term deposits—all in USD. It emphasizes secure, effective financial management, personalized attention, and tools to help clients achieve their financial goals. The site also provides contact forms, office locations in Puerto Rico and Colombia, and legal information like privacy and funds availability policies.",
+    technologies: [
+      'wordpress'
+    ],
+  },
+  clinicalatrinidad: {
+    title: "Clinica La Trinidad",
+    url: "https://clinicalatrinidad.com/",
+    imgLink: clinicalatrinidad,
+    gh: "",
+    description:
+      `Clínica La Trinidad is a private medical institution located in Lorica, Córdoba, specializing in high-quality, humanized healthcare. The website highlights their comprehensive medical and surgical services, advanced biomedical technology, and commitment to patients with chronic and high-impact conditions.
+      Key features include:
+      Easy appointment booking
+      Access to imaging and lab results online
+      Information about their 24/7 emergency services
+      Overview of medical services and patient care standards
+      The site provides contact information, service details, and forms for inquiries, reinforcing their mission to deliver safe, compassionate, and innovative healthcare.`,
+    technologies: [
+      'wordpress'
+    ],
+  },
+  
+}
 
 export const projects = {
+  lowcode,
   fullstack: reactProjects,
   // reactJs: reactProjects,
   "vanilla javascript": JSProjects,
