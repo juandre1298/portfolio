@@ -375,7 +375,8 @@ export const projects = {
 export const aboutMe = {
   greeting: "Hey,\nI'm Juan Andres Salas.",
   presentation:
-    "I'm a dynamic FullStack developer with expertise in React.js, Node.js, MySQL, and WordPress. Excited about crafting impactful solutions, I'm eager to discuss how my diverse skill set can contribute to your team's success. I am open to learning and dedicated to solving a wide variety of problems, ensuring adaptability and innovation in every project.    ",
+    `a Full Stack Software Engineer with over 4 years of experience building robust, user-friendly web applications. I specialize in Ruby on Rails and React, with a strong focus on creating clean, maintainable, and scalable code. I enjoy tackling complex problems, designing intuitive user experiences, and collaborating with cross-functional teams to deliver impactful solutions. Whether I’m debugging an API integration or crafting a sleek UI, I approach every challenge with curiosity, precision, and a commitment to continuous improvement.
+    Outside of coding, I’m passionate about learning new technologies, exploring creative projects, and sharing knowledge with the tech community.`,
   aboutMe:
     "\tI am a dynamic FullStack software developer and solution-oriented engineer with a passion for creating impactful solutions. Leveraging my background in mechanical engineering, I bring a holistic approach to software development. Proficient in both frontend and backend technologies such as React.js, Node.js, MySQL, and WordPress, I thrive in crafting innovative solutions that bridge the gap between user experience and technical functionality. With a keen eye for detail and a track record of successful project delivery, I am eager to contribute my diverse skill set to drive excellence in every project and engineer meaningful solutions.",
   moreAboutMe:
